@@ -1,0 +1,88 @@
+---
+title: "AI analysis types: Summarization, Notes, Search, Keywords"
+description: "CoTel offers four analysis types — Summarization, Notes, Search, and Keywords — each producing a different kind of result from your Telegram chat history."
+---
+
+CoTel analyzes Telegram chats, channels, and groups using four distinct analysis types. Each type is designed for a different goal, from a quick catch-up summary to precise smart search. You can launch any analysis from the template cards on the home screen or by typing your own query directly in the query box on the workspace page.
+
+<CardGroup cols={2}>
+  <Card title="Summarization" icon="align-left">
+    A brief summary of all messages with key ideas and conclusions. Fast and popular for catching up on busy chats.
+  </Card>
+  <Card title="Notes" icon="bookmark">
+    Structured notes broken down by topic and subtopic. Best for keeping detailed records of discussions.
+  </Card>
+  <Card title="Search" icon="search">
+    Smart search through chat content with context and links to source messages. Returns relevant results matching your query.
+  </Card>
+  <Card title="Keywords" icon="star">
+    Automatically extracts important terms, names, and entities from the text. Useful for identifying the key topics discussed.
+  </Card>
+</CardGroup>
+
+## Summarization
+
+**Badges:** Fast, Popular
+
+Summarization produces a concise summary of all messages in the selected chat or channel for the chosen analysis period. The result highlights key ideas, decisions, and conclusions so you can get up to speed without reading every message.
+
+Use summarization when you have been away from a chat and want to quickly understand what was discussed, or when you need a brief overview of a long group conversation.
+
+## Notes
+
+**Badge:** Detailed
+
+Notes (also called Digest) creates structured notes organized by topic and subtopic. Rather than a single paragraph, the result is a hierarchical breakdown of the conversation — similar to meeting notes — making it easy to navigate and reference later.
+
+Use this type when you need a thorough record of a discussion, such as a project group chat or a recurring team channel.
+
+## Search
+
+**Badge:** Precise
+
+Search performs smart AI-powered search through the chat's message history. It returns relevant messages that match your query, each shown with surrounding context and a link back to the original message in Telegram.
+
+Unlike a simple keyword filter, Search understands the meaning of your query and surfaces messages that are conceptually related, not just those containing the exact words you typed.
+
+## Keywords
+
+**Badge:** Auto
+
+Keywords automatically extracts important terms, names, and entities from the messages in the analysis period. The result is a list of key topics and named entities that appeared most in the conversation.
+
+Use this type when you want a quick overview of what a channel or group has been talking about, without reading through the content yourself.
+
+## Choosing an analysis type
+
+You can start an analysis in two ways:
+
+- **Template cards**: On the home screen, click one of the four template cards (Summarization, Notes, Search, Keywords) to open the workspace with the corresponding analysis preset already applied.
+- **Query box**: In the workspace, type your own query directly into the query input field and run the analysis. CoTel infers the appropriate analysis approach from your query.
+
+## AI models
+
+CoTel supports two AI models, selectable per query or set as a default in your profile settings:
+
+| Model | Best for |
+|---|---|
+| **OpenAI GPT-4.1 mini** | Fast, general-purpose analysis of chats of any size |
+| **Claude Sonnet 4.6** | Deeper analysis of long discussions where nuance matters |
+
+You can switch the model in the **Query settings** sidebar before running an analysis.
+
+## History analysis period
+
+The analysis period controls how many days of chat history CoTel reads for each query. You can configure it in the **Query settings** sidebar:
+
+- Range: 1–365 days
+- Default: 7 days
+
+<Info>
+  The maximum history depth available to you depends on your plan. Free plan users can analyze up to 7 days, Basic up to 30 days, and Pro up to 90 days.
+</Info>
+
+## Data privacy
+
+<Warning>
+  Chat analysis is performed by a third-party AI model (OpenAI). Do not upload secret or confidential data.
+</Warning>

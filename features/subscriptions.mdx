@@ -1,0 +1,86 @@
+---
+title: "Automate Telegram monitoring with CoTel subscriptions"
+description: "Subscriptions run periodic AI analysis of new messages in any chat or channel and deliver results as Telegram notifications directly to your account."
+---
+
+Subscriptions let CoTel monitor a Telegram chat or channel on your behalf and notify you automatically. Instead of running a manual analysis every time, you configure a subscription once and CoTel checks for new messages at a regular interval, analyzes them with AI, and sends you the results as a message in Telegram.
+
+## What is a subscription?
+
+A subscription is a periodic AI analysis of new messages in a chosen chat or channel for a given topic. When CoTel finds content that matches your query — or when the digest period elapses — it sends a Telegram notification directly to your Telegram account.
+
+## Subscription types
+
+<CardGroup cols={2}>
+  <Card title="Events" icon="bell">
+    Reacts to announcements or alerts that match your query. CoTel sends you a list of the specific messages that matched.
+  </Card>
+  <Card title="Digest" icon="file-text">
+    AI prepares a summary or digest of the chat for the specified read period and delivers it on schedule.
+  </Card>
+</CardGroup>
+
+**Events** subscriptions are best when you want to be alerted to specific occurrences — for example, a price announcement in a trading channel or a job posting in a community group. CoTel reads new messages, checks whether any match your query, and sends the matching messages to you.
+
+**Digest** subscriptions are best when you want a regular summary of what has been discussed in a chat over the past period, regardless of any specific trigger.
+
+## Creating a subscription
+
+<Steps>
+  <Step title="Open the Subscriptions panel">
+    In the workspace, expand the **Subscriptions** section in the left sidebar.
+  </Step>
+  <Step title="Add a new subscription">
+    Click the **+** button to open the subscription creation form.
+  </Step>
+  <Step title="Enter a subscription name">
+    Type a descriptive name so you can identify the subscription in your list later.
+  </Step>
+  <Step title="Select a subscription type">
+    Choose **Events** or **Digest** depending on what you want CoTel to do. Events sends you matching messages; Digest sends a periodic AI summary.
+  </Step>
+  <Step title="Select the chat or channel">
+    Pick a chat from your list or paste a Telegram link directly into the field.
+  </Step>
+  <Step title="Set the read period">
+    Choose how often CoTel should check for new messages: every 10 minutes, 30 minutes, 1 hour, 3 hours, 6 hours, 12 hours, or once a day.
+  </Step>
+  <Step title="Choose an AI model">
+    Select the AI model to use for this subscription. Free accounts use OpenAI automatically.
+  </Step>
+  <Step title="Enter the query text">
+    Describe what information to collect and when to notify you. You can use keywords or a more detailed question — the analysis is performed by AI.
+  </Step>
+  <Step title="Create the subscription">
+    Click **Create subscription**. CoTel will begin monitoring on the next scheduled interval.
+  </Step>
+</Steps>
+
+## Managing subscriptions
+
+Once a subscription is created, you can manage it from the Subscriptions panel:
+
+- **Pause / Resume**: Temporarily stop a subscription without deleting it, then resume it when needed.
+- **Edit**: Update the name, type, chat, period, model, or query text of an existing subscription.
+- **Delete**: Remove a subscription permanently. Note that trial subscriptions cannot be deleted manually.
+- **Activate from another mode**: If you have subscriptions created under a different mode (personal account vs. CoTel service account), you can activate them in your current mode from the subscription's action menu.
+
+## Plan limits
+
+Your plan determines how many active subscriptions you can have and the minimum allowed check frequency.
+
+| Plan | Active subscriptions | Minimum frequency |
+|---|---|---|
+| Free | Up to 2 trial subscriptions | Every 3 hours |
+| Basic | Up to 5 | Every 1 hour |
+| Pro | Up to 20 | Every 30 minutes |
+
+<Warning>
+  Trial subscriptions expire and cannot be deleted manually. Upgrade to a paid plan to unlock full subscription features.
+</Warning>
+
+## Important notes
+
+<Note>
+  Subscribing to private and personal chats is only available when you are signed in with your personal Telegram account. Public channels can be monitored using the CoTel service account.
+</Note>

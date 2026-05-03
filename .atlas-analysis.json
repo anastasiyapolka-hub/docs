@@ -1,0 +1,77 @@
+{
+  "projectType": "saas",
+  "projectName": "CoTel",
+  "projectDescription": "CoTel is an AI copilot for Telegram that lets you analyze chats, channels, and groups with AI — summarizing conversations, extracting keywords, searching content, and setting up automated subscriptions with Telegram notifications.",
+  "theme": "almond",
+  "primaryColor": "#FF8D37",
+  "lightColor": "#FFF4EC",
+  "darkColor": "#C45A00",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "account-setup"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/analysis-types",
+              "features/subscriptions",
+              "features/history"
+            ]
+          },
+          {
+            "group": "Connecting Telegram",
+            "pages": [
+              "telegram/connect-account",
+              "telegram/qr-login",
+              "telegram/service-account"
+            ]
+          },
+          {
+            "group": "Plans & Limits",
+            "pages": [
+              "plans/overview",
+              "plans/limits"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-powered Telegram chat summarization",
+    "Structured note-taking (digest) from chat history",
+    "Smart keyword and entity extraction",
+    "Full-text semantic search across chat content",
+    "Automated subscriptions with periodic AI analysis and Telegram notifications",
+    "Multi-language interface (English and Russian)",
+    "QR code and phone number Telegram authentication",
+    "Export results to PDF and other formats",
+    "Analysis history with repeat and export actions",
+    "Choice of AI model (OpenAI GPT-4.1 mini or Claude Sonnet)"
+  ],
+  "publicApiSurface": [
+    "POST /analyze — run AI analysis on a Telegram chat or channel",
+    "GET /auth/me — get current user profile and plan",
+    "POST /auth/logout — sign out",
+    "POST /account/change-plan — switch subscription plan (free / basic / pro)",
+    "GET/POST /subscriptions — list, create, manage automated subscriptions",
+    "POST /telegram/auth — authenticate with Telegram (phone/QR flow)",
+    "POST /telegram/logout — end Telegram session"
+  ]
+}

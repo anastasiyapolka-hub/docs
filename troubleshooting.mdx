@@ -1,0 +1,218 @@
+---
+title: "Troubleshoot common CoTel connection and analysis errors"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step fixes for Telegram connection errors, authentication problems, analysis failures, subscription issues, and account errors in CoTel."
+---
+
+This page covers the most frequent issues users encounter in CoTel and explains how to resolve them. Each section groups related problems so you can quickly find the one that applies to your situation.
+
+<Note>
+  If you encounter an issue not listed here, check the in-app error messages for specific guidance. Error codes displayed in the app can help you or support staff diagnose the problem quickly.
+</Note>
+
+## Telegram connection issues
+
+<AccordionGroup>
+  <Accordion title='"This chat is not available for reading under the service account"'>
+    The CoTel service account can only read **public** chats and channels. Private chats, private groups, and private channels are not accessible through it.
+
+    **To fix this:**
+    - Switch to your personal Telegram account by opening the **Connect to Telegram** section in the sidebar and signing in with your phone number or QR code.
+    - Alternatively, choose a public chat or channel instead.
+  </Accordion>
+
+  <Accordion title='"Chat or channel not found. Check the link, username or chat id."'>
+    CoTel could not locate a chat matching what you entered.
+
+    **To fix this:**
+    - Double-check the `@username`, public link, or numeric chat ID for typos.
+    - Make sure the chat or channel is public, or that you are already a member if it is private.
+    - If using the service account, the chat must be public — private chats require your personal account.
+  </Accordion>
+
+  <Accordion title='"The invite link is invalid or has expired."'>
+    Telegram invite links can be set to expire after a certain number of uses or a time limit set by the group admin.
+
+    **To fix this:**
+    - Contact the chat admin and ask them to generate a fresh invite link.
+    - Paste the new link into CoTel and try again.
+  </Accordion>
+
+  <Accordion title='"A join request has been sent for this chat. It will become available only after approval."'>
+    Some Telegram groups require admin approval before new members can read messages. CoTel has sent a join request on your behalf, but access is pending.
+
+    **To fix this:**
+    - Wait for the chat admin to approve your request. You will receive a Telegram notification when approved.
+    - Once approved, return to CoTel and run your analysis again.
+  </Accordion>
+
+  <Accordion title='"Service accounts have temporarily reached the Telegram limit for joining channels."'>
+    Telegram imposes rate limits on how many channels a single account can join in a short period. The CoTel service account has hit this limit temporarily.
+
+    **To fix this:**
+    - Wait a few minutes and try again.
+    - If the issue persists, switch to your personal Telegram account in the sidebar — personal accounts have independent rate limits.
+  </Accordion>
+
+  <Accordion title='"Telegram has temporarily limited access for the service account. Please try again later."'>
+    This is a Telegram flood-wait restriction triggered when the service account sends too many requests in a short window.
+
+    **To fix this:**
+    - Wait several minutes before retrying.
+    - If the problem keeps happening, connect your personal Telegram account (sidebar → Connect to Telegram) to bypass the service account entirely.
+  </Accordion>
+</AccordionGroup>
+
+## Authentication issues
+
+<AccordionGroup>
+  <Accordion title="QR code expired before I could scan it">
+    The QR code has a short validity window. If it expires before you scan it, Telegram rejects the login attempt.
+
+    **To fix this:**
+    - Click **Refresh QR** to generate a new code.
+    - Have the Telegram app open on your phone before clicking Refresh QR so you are ready to scan immediately (Telegram → Settings → Devices → Link Desktop Device).
+  </Accordion>
+
+  <Accordion title="Phone code not received">
+    When you sign in by phone number, Telegram delivers the confirmation code **inside the Telegram app** on your existing device — not via SMS.
+
+    **To fix this:**
+    - Open Telegram on your phone or another device where you are already signed in.
+    - Look for a message from **Telegram** with the login code.
+    - If you do not have another active Telegram device, use QR code login instead.
+  </Accordion>
+
+  <Accordion title='"Telegram password (2FA) is required"'>
+    Your Telegram account has Two-Factor Authentication enabled. CoTel needs this password to complete the Telegram session.
+
+    **To fix this:**
+    - Enter your **Telegram** Two-Factor Authentication password in the field that appears. This is the password you set in Telegram's privacy settings — it is separate from your CoTel account password.
+    - If you have forgotten your Telegram 2FA password, you will need to recover it through Telegram directly.
+  </Accordion>
+
+  <Accordion title="Cannot log in to CoTel: wrong email or password">
+    The email and password combination you entered does not match any CoTel account.
+
+    **To fix this:**
+    - Confirm you are using the email address you registered with.
+    - If you have forgotten your password, click **Forgot your password?** on the login screen and follow the reset flow. CoTel will send a reset code to your email.
+  </Accordion>
+
+  <Accordion title="Email verification code not received">
+    Verification and password reset codes are sent from CoTel to your registered email address.
+
+    **To fix this:**
+    - Check your spam or junk folder — automated emails sometimes land there.
+    - If the code is not there, click **Resend code** on the verification screen (a short cooldown applies between sends).
+    - Make sure the email address you are checking matches the one you used to register.
+  </Accordion>
+</AccordionGroup>
+
+## Analysis errors
+
+<AccordionGroup>
+  <Accordion title='"Daily request limit reached"'>
+    You have used all of your allowed analysis requests for today. Limits reset at the start of each new day.
+
+    **To fix this:**
+    - Wait for the daily reset and try again tomorrow.
+    - To increase your daily limit, upgrade your plan (Profile → Change plan):
+      - Free: 3 requests/day
+      - Basic: 20 requests/day
+      - Pro: 60 requests/day
+  </Accordion>
+
+  <Accordion title='"Monthly request limit reached"'>
+    You have exhausted your monthly request quota.
+
+    **To fix this:**
+    - Wait for the monthly reset (limits reset on the first day of each calendar month).
+    - Upgrade your plan to get a higher monthly allowance (Free: 60/mo, Basic: 300/mo, Pro: 1,500/mo).
+  </Accordion>
+
+  <Accordion title='"Your plan allows analyzing no more than X days of history"'>
+    The **History analysis period** you have configured in Query settings exceeds what your current plan allows (Free: 7 days, Basic: 30 days, Pro: 90 days).
+
+    **To fix this:**
+    - Open the sidebar → Chat requests → **Query settings** → **History analysis period, days** and reduce the value to fit within your plan's limit.
+    - Alternatively, upgrade your plan to unlock a longer history window.
+  </Accordion>
+
+  <Accordion title="Analysis is taking too long or returning no response">
+    Very large chats with a high message volume can take longer to process, especially over a wide time window.
+
+    **To fix this:**
+    - Reduce the history period in Query settings to a shorter range (for example, 3 days instead of 30).
+    - Try a more specific query so the AI has less content to sort through.
+    - If the issue persists after a few minutes, reload the page and try again. Large chats can occasionally take 2–3 minutes to process.
+  </Accordion>
+</AccordionGroup>
+
+## Subscription issues
+
+<AccordionGroup>
+  <Accordion title='"Active subscriptions limit for your plan has been reached"'>
+    You have reached the maximum number of active subscriptions your plan allows (Free: 2 trial subscriptions, Basic: 5, Pro: 20).
+
+    **To fix this:**
+    - Open the Subscriptions panel and **pause** one of your existing subscriptions to free up a slot.
+    - Or upgrade your plan to increase the active subscription limit.
+  </Accordion>
+
+  <Accordion title='"Your plan does not allow this frequency. Minimum allowed: X minutes"'>
+    The check interval you selected is shorter than what your plan permits (Free: no more than once every 3 hours, Basic: no more than once per hour, Pro: no more than once every 30 minutes).
+
+    **To fix this:**
+    - In the subscription form, select a less frequent interval that meets your plan's minimum. For example, if your plan requires at least 60 minutes between checks, choose "Every hour" or longer.
+    - Upgrade your plan if you need more frequent checks.
+  </Accordion>
+
+  <Accordion title='"Trial subscription access has already been used. Upgrade to a paid plan."'>
+    Both of your Free-plan trial subscriptions have been used up (either still running or expired). The Free plan does not allow creating additional subscriptions once the trial quota is consumed.
+
+    **To fix this:**
+    - Upgrade to the Basic or Pro plan (Profile → Change plan) to create new, permanent subscriptions.
+  </Accordion>
+
+  <Accordion title="Subscription is not sending Telegram notifications">
+    Notifications are delivered through the CoTel Telegram bot. If you are not receiving them, one of the following is likely the cause:
+
+    **To fix this:**
+    1. In the Subscriptions panel, click **Launch bot** to open the CoTel bot in Telegram and start it (send `/start` if prompted). CoTel cannot send you messages until you have initiated a conversation with the bot.
+    2. Make sure you have not blocked the CoTel bot in Telegram — check your Telegram blocked contacts list.
+    3. Verify that the subscription status shows **active** (not paused or error).
+    4. Check that your subscription's run interval has elapsed since you last received a notification.
+  </Accordion>
+
+  <Accordion title='Subscription is showing "error" status'>
+    A subscription enters the error state when it fails to complete a run. Common causes include an inaccessible chat or an AI model failure on a vague query.
+
+    **To fix this:**
+    - Click the subscription's actions menu and select **Edit**.
+    - Review the chat selection — make sure the chat is still accessible and that your account still has access to it.
+    - Review the query prompt — a clearer, more specific query reduces the chance of AI processing errors. Vague prompts like "tell me everything" are more likely to produce errors than focused ones like "summarize product launch announcements."
+    - Save the updated subscription; it will resume on the next scheduled run.
+  </Accordion>
+</AccordionGroup>
+
+## Account issues
+
+<AccordionGroup>
+  <Accordion title="Cannot delete account: password not accepted">
+    The account deletion screen requires your **CoTel** password (the one you set when you registered with CoTel), not your Telegram password.
+
+    **To fix this:**
+    - Make sure you are entering your CoTel password, not your Telegram or email provider password.
+    - If you have forgotten your CoTel password, cancel the deletion, go back to the login screen, and use **Forgot your password?** to reset it first. Then return to Profile → Profile settings → Delete profile.
+  </Accordion>
+
+  <Accordion title="Profile save failing">
+    Profile saves can fail if one or more fields contain invalid values.
+
+    **To fix this:**
+    - Check that your **phone number** (if entered) is in a valid international format, for example `+1 555 555-5555`. Leave the field blank if you do not want to provide a phone number — it is optional.
+    - Make sure a **timezone** and **country** are selected from the dropdown lists. Both fields must contain a valid selection, not a free-text entry.
+    - After correcting any invalid fields, click **Save changes** again.
+  </Accordion>
+</AccordionGroup>

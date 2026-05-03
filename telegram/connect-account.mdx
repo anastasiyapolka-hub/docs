@@ -1,0 +1,42 @@
+---
+title: "Connect your Telegram account to CoTel for analysis"
+sidebarTitle: "Connect Account"
+description: "Link your personal Telegram account to CoTel to analyze private chats, groups, and channels you belong to, and create personalized subscriptions."
+---
+
+Connecting your personal Telegram account gives CoTel access to the chats and channels you are a member of, enabling on-the-fly analysis and personalized subscriptions — all without storing your message history.
+
+## Why connect your Telegram account?
+
+Connecting your personal Telegram account allows CoTel to:
+
+- Analyze your private chats, groups, and channels that you are a member of
+- Access historical messages for the period allowed by your plan
+- Create subscriptions on private chats
+
+<Warning>
+  CoTel does not store your message history. Analysis is performed on-the-fly using data retrieved from Telegram during each request.
+</Warning>
+
+## Two connection methods
+
+- **Phone number**: Enter your phone number, receive a code in Telegram, then confirm the code. If Two-Factor Authentication (2FA) is enabled, CoTel will also prompt you to enter your Telegram password.
+- **QR code**: Faster sign-in — generate a QR code and scan it using the Telegram mobile app (**Settings → Devices → Link Desktop Device**).
+
+## Data source options in the workspace
+
+The **Connect to Telegram** section in the sidebar offers three modes:
+
+1. **My Telegram account** — Uses your personal Telegram account (requires phone or QR authentication).
+2. **CoTel service account** — Uses CoTel's shared service account (no personal authentication needed; public chats and channels only).
+3. **Telegram file (JSON)** — Upload a Telegram export JSON file for offline analysis (advanced).
+
+<Note>
+  Subscribing to private and personal chats requires signing in with your personal Telegram account. The CoTel service account only accesses public chats and channels.
+</Note>
+
+## Session management
+
+- Your Telegram session is securely maintained by CoTel.
+- To end the session, click **End session** in the Telegram status panel in the sidebar.
+- With **Enhanced security** enabled in your profile settings, signing out of CoTel also ends your Telegram session automatically.

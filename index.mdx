@@ -1,0 +1,134 @@
+---
+title: "CoTel: AI Copilot for Telegram"
+description: Everything you need to analyze Telegram chats, set up automated subscriptions, and extract insights with AI.
+mode: custom
+---
+
+<div data-product-guide-index className="flex w-full flex-col gap-8">
+  <div className="flex max-w-[540px] flex-col gap-2 self-center text-center">
+    <h1 className="font-serif text-[30px] font-medium leading-9 tracking-tight text-gray-900 dark:text-gray-50">
+      CoTel Documentation
+    </h1>
+    <p className="text-balance text-sm leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
+      Your AI copilot for Telegram. Summarize chats, search conversations, extract keywords, and automate periodic digests — all powered by AI.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <Card
+      title={<span className="product-guide-feature-card-title">Get started</span>}
+      icon="rocket"
+      href="/introduction"
+      className="product-guide-feature-card"
+      size={64}
+    >
+      <span className="product-guide-feature-card-description">Create your account and run your first analysis in minutes.</span>
+    </Card>
+
+    <a
+      href="/features/analysis-types"
+      className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+    >
+      <Icon icon="brain" color="rgb(var(--primary))" size={18} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Analysis types</span>
+        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          Summarize, take notes, search content, and extract keywords from any chat.
+        </span>
+      </div>
+    </a>
+    <a
+      href="/features/subscriptions"
+      className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+    >
+      <Icon icon="bell" color="rgb(var(--primary))" size={18} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Subscriptions</span>
+        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          Automate recurring AI analysis and receive results as Telegram notifications.
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <hr className="border-0 border-t border-border" />
+
+  <div className="flex flex-col gap-4">
+    <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Common tasks</h2>
+
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <a
+        href="/telegram/connect-account"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="send" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Connect Telegram</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Link your Telegram account to analyze private chats and channels.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/quickstart"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="zap" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Quick start</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Run your first AI analysis on a Telegram chat in under 5 minutes.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/features/subscriptions"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="repeat" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Create a subscription</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Set up automated periodic summaries or event alerts for any channel.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/plans/overview"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="layers" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Choose a plan</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Compare Free, Basic, and Pro plans to find the right fit.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/faq"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="circle-help" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">FAQ</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Answers to common questions about CoTel features, privacy, and limits.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/troubleshooting"
+        className="flex flex-col gap-4 rounded-none border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="wrench" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Troubleshooting</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Resolve common issues with Telegram auth, analysis errors, and subscriptions.
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

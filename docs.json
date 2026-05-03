@@ -1,0 +1,87 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "CoTel",
+  "description": "CoTel is an AI copilot for Telegram. Analyze chats, extract insights, and automate subscriptions.",
+  "colors": {
+    "primary": "#FF8D37",
+    "light": "#FFF4EC",
+    "dark": "#C45A00"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Home",
+          "icon": "house",
+          "href": "/"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "account-setup"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/analysis-types",
+              "features/subscriptions",
+              "features/history"
+            ]
+          },
+          {
+            "group": "Connecting Telegram",
+            "pages": [
+              "telegram/connect-account",
+              "telegram/qr-login",
+              "telegram/service-account"
+            ]
+          },
+          {
+            "group": "Plans & Limits",
+            "pages": [
+              "plans/overview",
+              "plans/limits"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "faq",
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Try CoTel",
+      "href": "https://cotel-backend.onrender.com"
+    }
+  },
+  "footer": {
+    "socials": {}
+  }
+}
