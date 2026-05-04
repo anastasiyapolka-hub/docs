@@ -17,7 +17,7 @@
   "contextual": {
     "options": ["copy", "view", "assistant"]
   },
-  "navigation": {
+    "navigation": {
     "global": {
       "anchors": [
         {
@@ -27,46 +27,68 @@
         }
       ]
     },
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "account-setup"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "quickstart",
+                  "account-setup"
+                ]
+              },
+              {
+                "group": "Core Features",
+                "pages": [
+                  "features/analysis-types",
+                  "features/subscriptions",
+                  "features/history"
+                ]
+              },
+              {
+                "group": "Connecting Telegram",
+                "pages": [
+                  "telegram/connect-account",
+                  "telegram/qr-login",
+                  "telegram/service-account"
+                ]
+              },
+              {
+                "group": "Plans & Limits",
+                "pages": [
+                  "plans/overview",
+                  "plans/limits"
+                ]
+              },
+              {
+                "group": "Help",
+                "pages": [
+                  "faq",
+                  "troubleshooting"
+                ]
+              }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "language": "ru",
+        "tabs": [
           {
-            "group": "Core Features",
-            "pages": [
-              "features/analysis-types",
-              "features/subscriptions",
-              "features/history"
-            ]
-          },
-          {
-            "group": "Connecting Telegram",
-            "pages": [
-              "telegram/connect-account",
-              "telegram/qr-login",
-              "telegram/service-account"
-            ]
-          },
-          {
-            "group": "Plans & Limits",
-            "pages": [
-              "plans/overview",
-              "plans/limits"
-            ]
-          },
-          {
-            "group": "Help",
-            "pages": [
-              "faq",
-              "troubleshooting"
+            "tab": "Документация",
+            "groups": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/introduction"
+                ]
+              }
             ]
           }
         ]
