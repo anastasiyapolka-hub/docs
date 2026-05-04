@@ -3,49 +3,52 @@ title: "CoTel: AI-копилот для работы с Telegram"
 description: "CoTel подключается к вашему аккаунту Telegram и использует AI, чтобы выполнять умный поиск по чатам и отвечать на ваши вопросы, суммировать чаты, извлекать ключевые слова, искать сообщения и отправлять автоматические уведомления с дайджестами."
 ---
 
-CoTel — это AI-сервис, который позволяет анализировать любой чат, канал или группу Telegram, не покидая браузер. Вместо того чтобы пролистывать тысячи сообщений, вы описываете, что вам нужно, а AI CoTel читает за вас — возвращая структурированные саммари, тематические дайджесты, умные результаты поиска или извлечённые ключевые слова за секунды.
+CoTel — это AI-сервис, который позволяет анализировать любой чат, канал или группу Telegram, не покидая браузер. Вместо того чтобы пролистывать тысячи сообщений, вы описываете, что вам нужно, а CoTel читает за вас — возвращая структурированные саммари, тематические дайджесты, умные результаты поиска или извлечённые ключевые слова за секунды.
 
-## What CoTel does
+## Что делает CoTel
 
-CoTel reads messages from a Telegram source you authorize, sends them to an AI model for processing, and returns a structured result. You can run one-off analyses on demand or set up automated subscriptions that monitor a chat on a schedule and push findings to you via a Telegram bot notification.
+CoTel читает сообщения из аккаунта Telegram, который вы авторизуете, отправляет их AI-модели для обработки и возвращает структурированный результат. Вы можете запускать разовый анализ по запросу или настроить автоматические подписки, которые отслеживают чат/канал/группу по расписанию и отправляют вам результаты через уведомление Telegram-бота CoTel.
 
-The interface is available in **English** and **Russian**, switchable at any time via the globe icon in the navigation bar.
+Интерфейс доступен на **английском** и **русском** языках, его можно переключить в любой момент через иконку глобуса в панели навигации.
 
-## Analysis types
+## Типы анализа
 
 CoTel offers four core analysis modes:
 
 | Type | What it produces |
-|---|---|
+| --- | --- |
 | **Summarization** | A concise summary of all messages in the selected period, highlighting key ideas and conclusions |
 | **Notes / Digest** | Structured notes organized by topic and subtopic — useful for long technical or project discussions |
 | **Search** | AI-powered semantic search across chat history, returning relevant messages with context and source references |
 | **Keywords** | Automatic extraction of important terms, names, entities, and topics from the conversation |
 
-## Automated subscriptions
+## Автоматические подписки
 
 Subscriptions let CoTel periodically monitor a chat or channel on your behalf. You define a topic or prompt, choose a check frequency, and CoTel runs the analysis automatically — then sends you a Telegram notification when it finds relevant content or has a new digest ready. The Free plan includes up to 2 trial subscriptions; paid plans unlock up to 20 active subscriptions with higher check frequencies.
 
-## AI models
+## AI-модели
 
-Two AI models are available for analysis:
+Для анализа доступны две AI-модели:
 
-- **OpenAI GPT-4.1 mini** — fast, general-purpose analysis (default on the Free plan)
-- **Claude Sonnet 4.6** — deeper analysis suited to long discussions (available on paid plans)
+- **OpenAI GPT-4.1 mini** — быстрый анализ общего назначения, по умолчанию на тарифе Free
+- **Claude Sonnet 4.6** — более глубокий анализ, подходящий для длинных обсуждений, доступен на платных тарифах
 
-## Explore the docs
+## Изучите документацию
 
 <CardGroup cols={2}>
-  <Card title="Quickstart" icon="rocket" href="/quickstart">
-    Create an account, connect Telegram, and run your first analysis in minutes
+  <Card title="Быстрый старт" icon="rocket" href="/quickstart">
+    Создайте аккаунт, подключите Telegram и запустите первый анализ за несколько минут
   </Card>
-  <Card title="Analysis types" icon="magnifying-glass" href="/features/analysis-types">
-    Learn what each analysis mode does and when to use it
+
+  <Card title="Типы анализа" icon="magnifying-glass" href="/features/analysis-types">
+    Узнайте, что делает каждый режим анализа и когда его лучше использовать
   </Card>
-  <Card title="Subscriptions" icon="bell" href="/features/subscriptions">
-    Set up automated monitoring with Telegram notifications
+
+  <Card title="Подписки" icon="bell" href="/features/subscriptions">
+    Настройте автоматический мониторинг с уведомлениями в Telegram
   </Card>
-  <Card title="Connect Telegram" icon="paper-plane" href="/telegram/connect-account">
-    Authorize your Telegram account or use the CoTel service account
+
+  <Card title="Подключение к Telegram" icon="paper-plane" href="/telegram/connect-account">
+    Авторизуйте свой аккаунт Telegram или используйте служебный аккаунт CoTel
   </Card>
 </CardGroup>
