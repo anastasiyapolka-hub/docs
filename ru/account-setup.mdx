@@ -57,61 +57,63 @@ CoTel использует cookie для поддержания вашей ав�
 
 ## Настройки профиля
 
-Access your profile by clicking your avatar or email in the sidebar and selecting **Profile**. The profile panel has three tabs.
+Чтобы открыть профиль, нажмите на аватар или email в сайдбаре и выберите **Профиль**. Панель профиля содержит три вкладки.
 
 <Tabs>
-  <Tab title="Limits">
-    The **Limits** tab shows your current plan's usage counters and constraints:
+  <Tab title="Лимиты">
+    Вкладка **Лимиты** показывает счётчики использования и ограничения вашего текущего тарифа:
 
-    - **Requests today** / **Requests this month** — how many analyses you have run against your daily and monthly quotas
-    - **Active subscriptions** — number of subscriptions currently active
-    - **History analysis depth** — maximum number of days of chat history available for queries (e.g., up to 7 days on Free, up to 90 days on Pro)
-    - **Minimum subscription frequency** — how often a subscription can run at minimum (e.g., no more than once every 3 hours on Free)
-    - **Chat and channel history** — whether saved chat history is available on your plan
-    - **Trial subscriptions** — number of trial subscriptions used out of the plan allowance
+    - **Запросы сегодня** / **Запросы в месяц** — сколько успешных запросов к Telegram вы уже запустили относительно дневной и месячной квоты
+    - **Активные подписки** — количество подписок, которые сейчас активны. Не учитываются созданные подписки на паузе
+    - **Глубина анализа истории** — максимальное количество дней истории чата, доступное для запросов, например до 7 дней на Free, до 30 дней на Basic и до 90 дней на Pro
+    - **Минимальная частота подписки** — как часто подписка может запускаться для сканирования истории чата/канала/группы, например не чаще одного раза в 3 часа на Free
+    - **История чатов и каналов** — доступна ли сохранённая история чатов на вашем тарифе. Данная функция добавляет удобство использования сервиса, отображая список чатов, к которым выполнялись последние запросы
+    - **Trial-подписки** — сколько пробных подписок использовано из доступного лимита тарифа. Актуально для  Free тарифа. 
 
-    Click **Change plan** to visit the pricing page and upgrade.
+    Нажмите **Сменить тариф**, чтобы перейти на страницу тарифов и обновить план.
   </Tab>
-  <Tab title="Personal data">
-    The **Personal data** tab stores your identity and localization settings:
+  <Tab title="Личные данные">
+    Вкладка **Личные данные** хранит данные аккаунта и настройки локализации:
 
-    - **Email** — your sign-in address
-    - **Phone** — optional; enter your phone number here for convenient Telegram login when connecting your account
-    - **Country** — set at registration; can be updated here
-    - **Time zone** — affects the displayed time in CoTel bot notifications and subscription run intervals
+    - **Email** — ваш адрес для входа в аккаунт
+    - **Телефон** — необязательное поле; укажите номер телефона для более удобного входа в Telegram при подключении аккаунта
+    - **Страна** — указывается при регистрации и не подлежит дальнейшему изменению
+    - **Часовой пояс** — влияет на отображаемое время в уведомлениях бота CoTel и интервалы запуска подписок. Доступно для изменения
 
-    Click **Save changes** to apply any edits.
+    Нажмите **Сохранить изменения**, чтобы применить правки.
   </Tab>
-  <Tab title="Profile settings">
-    The **Profile settings** tab controls interface behavior and security:
+  <Tab title="Настройки профиля">
+    Вкладка **Настройки профиля** управляет поведением интерфейса и параметрами безопасности.
 
-    **Interface language**
+    **Язык интерфейса**
 
-    Choose between **English** and **Russian**. You can also switch the language at any time using the globe icon in the navigation bar — no profile save required.
+    Выберите **English** или **Russian**. Вы также можете переключить язык в любой момент через иконку глобуса в панели навигации — сохранять профиль для этого не требуется.
 
-    **Default AI model**
+    **AI модель по умолчанию**
 
-    Select the AI model used by default for new analyses and new subscriptions:
+    Выбор AI модели по умолчанию доступен на тарифах **Basic** и **Pro**. На тарифе **Free** автоматически используется модель **OpenAI GPT-4.1 mini**, и изменить её нельзя.
 
-    - **OpenAI GPT-4.1 mini** — fast, general-purpose analysis; used automatically on the Free plan
-    - **Claude Sonnet 4.6** — deeper analysis of long discussions; available on paid plans
+    Выберите AI модель, которая будет использоваться по умолчанию для новых запросов и новых подписок:
 
-    The default model can be overridden per-query in the query settings panel and per-subscription when creating a subscription.
+    - **OpenAI GPT-4.1 mini** — быстрый универсальный анализ; автоматически используется на тарифе Free
+    - **Claude Sonnet 4.6** — более глубокий анализ длинных обсуждений; доступен на платных тарифах
 
-    **Enhanced security**
+    Модель по умолчанию можно переопределить для отдельного запроса в панели настроек запроса и для отдельной подписки при её создании.
 
-    When this option is enabled, signing out of CoTel also ends the active Telegram session linked to your account. Enable this if you want to ensure your Telegram access is fully revoked whenever you log out of CoTel.
+    **Повышенная безопасность**
 
-    **Change password**
+    Когда эта опция включена, выход из CoTel также завершает активную Telegram-сессию, связанную с вашим аккаунтом. Включите её, если хотите быть уверены, что доступ к Telegram полностью отзывается каждый раз, когда вы выходите из CoTel.
 
-    Click **Change password** to open a form where you enter your current password and set a new one (minimum 8 characters).
+    **Смена пароля**
 
-    **Delete profile**
+    Нажмите **Сменить пароль**, чтобы открыть форму, где нужно ввести текущий пароль и задать новый — минимум 8 символов.
 
-    Click **Delete profile** to permanently remove your account.
+    **Удаление профиля**
+
+    Нажмите **Удалить профиль**, чтобы навсегда удалить аккаунт.
 
     <Warning>
-      This action cannot be undone. Your sessions, Telegram session, chat history, subscriptions, and profile data will be deleted.
+      Это действие нельзя отменить. Ваши сессии, Telegram-сессия, история чатов, подписки и данные профиля будут удалены.
     </Warning>
   </Tab>
 </Tabs>
