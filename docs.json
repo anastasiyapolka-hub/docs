@@ -86,7 +86,9 @@
               {
                 "group": "Начало работы",
                 "pages": [
-                  "ru/introduction1"
+                  "ru/introduction",
+                  "ru/quickstart",
+                  "ru/account-setup"
                 ]
               }
             ]
