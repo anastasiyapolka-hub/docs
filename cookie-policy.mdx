@@ -1,0 +1,150 @@
+---
+title: "Cookie Policy"
+---
+
+**Version 1.0**\
+**Effective date:** 01.05.2026\
+**Last updated:** -
+
+## 1. General provisions
+
+This Cookie Policy (hereinafter — the “Policy”) explains how the CoTel web service (hereinafter — the “Service”, “we”, “us”) uses cookies and similar technologies, including browser local storage, and how the user may manage their use.
+
+This Policy supplements the CoTel Privacy Policy and must be read together with it.
+
+By using the Service, the user confirms that they have read this Policy and understand which technologies are used by the Service.
+
+## 2. What cookies and similar technologies are
+
+Cookies are small text files that are stored on the user’s device when visiting a website. They allow the website to “recognize” the user during subsequent visits, save settings, and ensure the proper operation of the service.
+
+Local storage and similar technologies, including local storage, browser local storage, session storage, and IndexedDB, are mechanisms built into modern browsers that allow web applications to store data directly in the user’s browser. From a regulatory perspective, including under the ePrivacy Directive of the European Union on privacy and electronic communications, these technologies are treated similarly to cookies, and similar requirements apply to them.
+
+Further in this Policy, unless expressly stated otherwise, the term cookies means both cookies themselves and similar technologies for local storage of data in the browser.
+
+Cookies and similar technologies may be used to:
+
+1. recognize the user within one or more sessions;
+2. save user settings, for example the interface language;
+3. ensure the proper operation of the Service, including authorization;
+4. improve the level of security.
+
+## 3. What cookies and similar technologies we use
+
+The Service uses only strictly necessary technologies — those without which the Service cannot function properly. The Service does not use cookies or other technologies for marketing, advertising, profiling, or behavioral analytics.
+
+### 3.1. Server-side cookies
+
+Server-side cookies are set by the Service at the moment of user authorization:
+
+| Name | Type | Purpose | Duration | Attributes |
+| --- | --- | --- | --- | --- |
+| cotel\_session | Strictly Necessary | User session identifier. Used for authentication, maintaining authorized status, and ensuring security, including protection against session substitution. | Up to 30 days from the last activity | HttpOnly, Secure, SameSite=None, Path=/ |
+
+**Security attributes.** HttpOnly means that the cookie is not accessible to scripts in the browser, providing protection against theft through XSS attacks. Secure means that the cookie is transmitted only over a secure HTTPS connection. SameSite=None allows the cookie to work in a cross-site context, which is necessary for certain modes of operation of the Service, and must be used together with the Secure attribute.
+
+### 3.2. Browser local storage
+
+The Service uses browser local storage to save technically necessary data without which the proper operation of the interface is impossible or significantly hindered:
+
+| Key | Purpose | Retention period |
+| --- | --- | --- |
+| cotel\_session\_fallback | Backup channel for transmitting the session identifier. Used in cases where the user’s browser blocks or restricts cookies, a typical scenario being browsers on iOS or strict tracking protection mode. Technically necessary for correct authorization operation. | Until the user explicitly signs out of the account or clears browser data |
+| cotel\_language\_manual | Saving the interface language selected by the user. Allows the selected language to be applied on subsequent visits. | Until browser data is cleared |
+| cotel\_language\_auto | Saving the result of automatic interface language detection based on browser settings. Used until the user explicitly selects a language. | Until browser data is cleared |
+| cotel\_user\_prefs | Local user interface settings, for example saved state of UI elements. | Until browser data is cleared |
+| cotel\_cookie\_banner\_accepted | A mark indicating that the user has read the notice on the use of cookies. Used so that the information notice is not shown again on every visit. | Until browser data is cleared |
+| Technical keys of work screens, for example the selected data source mode in the form for creating a new analysis | Saving the user’s last choice in individual forms for convenience during subsequent use. | Until browser data is cleared |
+
+All listed local storage keys are stored exclusively in the user’s browser and are not automatically transmitted to the server with each request, unlike cookies. The user may delete this data at any time through browser settings.
+
+## 4. What technologies the Service does not use
+
+For transparency, we list the technologies that the Service does not use:
+
+1. Third-party analytics trackers, including Google Analytics, Yandex.Metrica, Plausible, Mixpanel, Amplitude, and similar tools.
+2. Advertising pixels and advertising network trackers, including Facebook Pixel, Google Ads, TikTok Pixel, and similar tools.
+3. Cookies or other technologies for targeted advertising and behavioral profiling.
+4. Cookies that transmit user data to advertising networks or data brokers.
+
+## 5. Third-party cookies
+
+The Service does not place third-party cookies related to advertising or analytics on its pages.
+
+At the same time, certain third-party services with which the user interacts while using the Service may set their own cookies at the moment of such interaction:
+
+1. Hosting provider Render, Inc. — the infrastructure provider hosting the Service may technically use service cookies for load balancing and protection against attacks. CoTel does not control these cookies.
+2. Payment provider — at the current stage of project development (MVP), payment integration is not activated. After its activation, a user who proceeds to the payment page of a third-party payment system, Lemon Squeezy, will interact with that provider’s page, which uses its own cookies in accordance with its own policy.
+
+The Service does not transfer its own cookies to third parties.
+
+## 6. Retention period
+
+Cookies are divided into:
+
+1. session cookies — exist only during one browser session and are deleted when it is closed;
+2. persistent cookies — remain for the established validity period or until explicitly deleted by the user.
+
+The cotel\_session cookie has a maximum lifetime of 30 days from the last activity; if there is no activity after this period expires, the session ends and the cookie ceases to be valid. When the user signs out of the account, the cookie is deleted immediately.
+
+Local storage entries are retained until the user explicitly clears browser data or signs out of the account, in the case of the cotel\_session\_fallback key.
+
+## 7. Managing cookies and local storage
+
+The user may manage cookies and local storage through their browser settings:
+
+1. view the list of saved cookies and local storage entries;
+2. delete individual cookies or all cookies;
+3. block the setting of new cookies, fully or for specific websites;
+4. configure browser behavior regarding third-party cookies;
+5. clear local storage and similar storage mechanisms.
+
+Detailed instructions for popular browsers are available in their official documentation:
+
+1. Google Chrome — the “Privacy and security” section in settings;
+2. Mozilla Firefox — the “Privacy & Security” section;
+3. Apple Safari — the “Privacy” section in browser settings;
+4. Microsoft Edge — the “Cookies and site permissions” section.
+
+**Important.** Since the cookies and local storage entries used by the Service are strictly necessary for the functioning of the Service, blocking or deleting them will lead to inability to authorize, loss of saved settings, and incorrect operation of certain functions. In particular, if the cotel\_session cookie is blocked and local storage is blocked at the same time, the user will not be able to sign in to their account.
+
+## 8. Do Not Track and Global Privacy Control signals
+
+Do Not Track (DNT) and Global Privacy Control (GPC) are signals that the user’s browser may send to websites indicating that the user does not wish to be tracked. Since the Service does not perform behavioral tracking of users and does not use tracking technologies, no special processing of these signals is required. In any case, the Service does not track users in a cross-site context, regardless of the presence or absence of such signals.
+
+## 9. Security
+
+We apply measures to protect data related to the use of cookies and local storage:
+
+1. transmission of all data over a secure HTTPS / TLS connection;
+2. the HttpOnly attribute for the server-side authentication cookie, protecting against theft through scripts in the browser;
+3. the Secure attribute for the server-side authentication cookie, meaning transmission only over HTTPS;
+4. storage of the session identifier on the server side as a cryptographic hash, SHA-256; the full identifier is located only in the cookie / local storage on the user’s device;
+5. limitation of the lifetime of the authentication cookie, maximum 30 days;
+6. immediate invalidation of the session when the user signs out of the account.
+
+## 10. Notice on the use of cookies
+
+When first visiting the Service, the user is shown an information notice about the use of cookies and similar technologies with a link to this Policy. Since the Service uses only strictly necessary technologies, separate consent for their use is not requested — continued use of the Service means that the user has been informed of and has read this Policy.
+
+If in the future the Service begins to use additional categories of cookies, for example analytical or functional cookies, for which applicable law requires explicit consent, such consent will be requested separately through a consent management mechanism.
+
+## 11. Changes to this Policy
+
+We may periodically update this Policy. The current version is always available on the Service website. We will notify users of material changes affecting the set of cookies used or their purposes in the manner provided in the Privacy Policy.
+
+The date of the last update is indicated at the beginning of this Policy.
+
+## 12. Relationship with other documents
+
+This Policy forms an integral part of the CoTel Privacy Policy and the Terms of Service. In the event of a conflict between this Policy and the Privacy Policy, the Privacy Policy shall apply in the part governing personal data processing.
+
+## 13. Contacts
+
+For questions related to this Policy and the use of cookies:
+
+**Email:** [anastasiya.polka@gmail.com](mailto:anastasiya.polka@gmail.com)
+
+**Subject line for requests:** “Cookie Policy” or “Запрос по cookies”.
+
+---
