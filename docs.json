@@ -100,7 +100,15 @@
               {
                 "group": "Правовые документы и политики",
                 "pages": [
-                  "politika-konfidentsialnosti"
+                  "polzovatelskoe-soglashenie",
+                  "politika-konfidentsialnosti",
+                  "politika-ispolzovaniya-cookie",
+                  "spisok-pod-obrabotchikov-dannykh",
+                  "soglasie-na-obrabotku-personalnykh-dannykh",
+                  "uvedomlenie-ob-ai-obrabotke-dannykh",
+                  "pravila-dopustimogo-ispolzovaniya",
+                  "usloviya-oplaty-i-podpiski",
+                  "pravovoe-raskrytie-informatsii"
                 ]
               }
             ]
