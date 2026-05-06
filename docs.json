@@ -72,6 +72,12 @@
                   "faq",
                   "troubleshooting"
                 ]
+              },
+              {
+                "group": "Legal & Policies",
+                "pages": [
+                  "privacy-policy"
+                ]
               }
             ]
           }
@@ -89,6 +95,12 @@
                   "ru/introduction",
                   "ru/quickstart",
                   "ru/account-setup"
+                ]
+              },
+              {
+                "group": "Правовые документы и политики",
+                "pages": [
+                  "politika-konfidentsialnosti"
                 ]
               }
             ]
