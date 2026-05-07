@@ -107,6 +107,14 @@
                 ]
               },
               {
+                "group": "Ключевые функции",
+                "pages": [
+                  "a-1",
+                  "vv",
+                  "aa"
+                ]
+              },
+              {
                 "group": "Подключение к Telegram",
                 "pages": [
                   "h",
@@ -127,14 +135,6 @@
                   "pravila-dopustimogo-ispolzovaniya",
                   "usloviya-oplaty-i-podpiski",
                   "pravovoe-raskrytie-informatsii"
-                ]
-              },
-              {
-                "group": "Ключевые функции",
-                "pages": [
-                  "a-1",
-                  "vv",
-                  "aa"
                 ]
               }
             ]
