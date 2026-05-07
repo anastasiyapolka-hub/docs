@@ -123,6 +123,13 @@
                 ]
               },
               {
+                "group": "Тарифы и лимиты",
+                "pages": [
+                  "untitled-page",
+                  "llyo"
+                ]
+              },
+              {
                 "group": "Правовые документы и политики",
                 "pages": [
                   "aaaaa",
@@ -135,6 +142,12 @@
                   "pravila-dopustimogo-ispolzovaniya",
                   "usloviya-oplaty-i-podpiski",
                   "pravovoe-raskrytie-informatsii"
+                ]
+              },
+              {
+                "group": "Помощь",
+                "pages": [
+                  "ooo"
                 ]
               }
             ]
