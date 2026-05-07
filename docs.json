@@ -130,6 +130,13 @@
                 ]
               },
               {
+                "group": "Помощь",
+                "pages": [
+                  "ooo",
+                  "mm"
+                ]
+              },
+              {
                 "group": "Правовые документы и политики",
                 "pages": [
                   "aaaaa",
@@ -142,13 +149,6 @@
                   "pravila-dopustimogo-ispolzovaniya",
                   "usloviya-oplaty-i-podpiski",
                   "pravovoe-raskrytie-informatsii"
-                ]
-              },
-              {
-                "group": "Помощь",
-                "pages": [
-                  "ooo",
-                  "mm"
                 ]
               }
             ]
