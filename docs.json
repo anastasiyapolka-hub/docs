@@ -60,6 +60,10 @@
                 ]
               },
               {
+                "group": "Use Cases",
+                "pages": []
+              },
+              {
                 "group": "Plans & Limits",
                 "pages": [
                   "plans/overview",
@@ -121,6 +125,10 @@
                   "a",
                   "p"
                 ]
+              },
+              {
+                "group": "Сценарии использования",
+                "pages": []
               },
               {
                 "group": "Тарифы и лимиты",
