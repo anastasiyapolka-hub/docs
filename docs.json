@@ -47,8 +47,7 @@
                 "group": "Core Features",
                 "pages": [
                   "features/analysis-types",
-                  "features/subscriptions",
-                  "features/history"
+                  "features/subscriptions"
                 ]
               },
               {
@@ -114,8 +113,7 @@
                 "group": "Ключевые функции",
                 "pages": [
                   "a-1",
-                  "vv",
-                  "aa"
+                  "vv"
                 ]
               },
               {
