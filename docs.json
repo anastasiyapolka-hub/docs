@@ -61,7 +61,8 @@
               {
                 "group": "Use Cases",
                 "pages": [
-                  "rrr"
+                  "rrr",
+                  "EventSubscriptions"
                 ]
               },
               {
