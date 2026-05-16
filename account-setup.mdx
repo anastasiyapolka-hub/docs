@@ -1,104 +1,116 @@
 ---
-title: "CoTel account setup: registration, profile, settings"
-description: "Learn how to register, sign in, reset your password, and configure profile settings including language, AI model, and security options."
+title: "CoTel Account: Registration, Profile, and Settings"
+description: "Learn how to sign up, sign in, reset your password, and configure your profile, including interface language, AI model, and security settings."
 ---
 
-Your CoTel account controls everything from your plan limits and Telegram session to the default AI model used for analysis. This page covers registration, signing in, password management, and all profile settings available after you log in.
+Your CoTel account controls everything: from plan limits and your Telegram session to the AI model used by default for analysis. This page describes registration, sign-in, password management, and all profile settings available after authorization.
 
 ## Registration
 
 <Steps>
-  <Step title="Open the sign-up form">
-    Click **Sign in / Sign up** in the navigation bar. Enter your email address and click **Continue**, then select **Sign up**.
+  <Step title="Create a CoTel account">
+    Open CoTel and click **Sign in / Sign up**. Enter your email address and click **Continue**, then choose **Sign up** on the next screen.
   </Step>
-
   <Step title="Fill in your details">
-    Complete the registration form with the following fields:
+    Complete registration by filling in the following fields:
 
-    - **Email** — your sign-in email address
-    - **Country** — set once at registration; used for localization
-    - **Time zone** — determines the displayed time in CoTel bot notifications when subscriptions send you alerts
-    - **Password** — must be at least 8 characters
-    - **Confirm password** — repeat the password to confirm
+    - **Email** — the address where the verification code will be sent
+    - **Country** — your country of actual residence. It is selected once during registration and used to localize settings
+    - **Time zone** — affects the displayed time in CoTel bot notifications for subscriptions
+    - **Password** — must be at least 8 characters long
+    - **Confirm password** — repeat the password to confirm it
 
-    Check the box to confirm you have read and agreed to the **Privacy Policy** and **Terms of Service** and that you are at least 16 years old.
+    Check the box confirming that you have read the **Privacy Policy** and **Terms of Service**, and that you are at least 16 years old, then click **Sign up**. It is recommended that you review these documents first by following the links.
   </Step>
+  <Step title="Verify your email">
+    Click **Sign up**. CoTel will send a 6-digit verification code to your email address. Enter the code on the verification screen and click **Verify**.
 
-  <Step title="Submit and verify your email">
-    Click **Sign up**. CoTel sends a 6-digit verification code to your email address. Enter the code on the verification screen and click **Verify**.
+    If the code does not arrive, click **Resend code**. Verification codes are valid for a limited time — if your code has expired, request a new one. After verification, you will be signed in automatically.
 
-    If the code does not arrive, click **Resend code**. Codes expire — if yours has expired, request a fresh one. Once verified, you are signed in automatically.
+    If you forgot your password, click **Forgot your password?** to request a password reset code by email.
   </Step>
 </Steps>
 
-## Signing in
+## Sign in to your account
 
 Open CoTel and click **Sign in / Sign up**. Enter your email address, click **Continue**, then enter your password and click **Sign in**.
 
-If you have not yet verified your email, CoTel sends a new verification code when you attempt to sign in.
+CoTel uses cookies to maintain your authorized session. This usually means that when you reopen the service, you do not need to sign in again. After the session expires or after you sign out, you will need to sign in again.
 
 ## Password reset
 
-If you forget your password, click **Forgot your password?** on the sign-in screen. Enter your email address and click **Send code**. If an account with that address exists, CoTel sends a reset code to your inbox.
+If you forgot your password, click **Forgot your password?** on the sign-in screen. Enter your email address and click **Send code**. If an account with this address exists, CoTel will send a reset code to your email.
 
-On the next screen, enter the code from the email along with your new password (minimum 8 characters) and its confirmation, then click **Change password**. The new password takes effect immediately.
+On the next screen, enter the code from the email, your new password — at least 8 characters — and its confirmation, then click **Change password**. The new password takes effect immediately.
+
+## Change password
+
+If you want to change your current password, open your profile: click your avatar or email in the sidebar and choose **Profile**. Then go to the **Profile settings** tab and click **Change password**.
+
+In the window that opens, fill in the form:
+
+- **Current password** — enter the password you use now
+- **New password** — set a new password, at least 8 characters
+- **Repeat new password** — enter the new password again to confirm it
+
+After filling in the fields, click **Change password**. If the current password is correct, and the new password meets the requirements and matches the confirmation, CoTel will update the password immediately. Use the new password the next time you sign in.
 
 ## Profile settings
 
-Access your profile by clicking your avatar or email in the sidebar and selecting **Profile**. The profile panel has three tabs.
+To open your profile, click your avatar or email in the sidebar and choose **Profile**. The profile panel contains three tabs.
 
 <Tabs>
   <Tab title="Limits">
-    The **Limits** tab shows your current plan's usage counters and constraints:
+    The **Limits** tab shows usage counters and restrictions for your current plan:
 
-    - **Requests today** / **Requests this month** — how many analyses you have run against your daily and monthly quotas
-    - **Active subscriptions** — number of subscriptions currently active
-    - **History analysis depth** — maximum number of days of chat history available for queries (e.g., up to 7 days on Free, up to 90 days on Pro)
-    - **Minimum subscription frequency** — how often a subscription can run at minimum (e.g., no more than once every 3 hours on Free)
-    - **Chat and channel history** — whether saved chat history is available on your plan
-    - **Trial subscriptions** — number of trial subscriptions used out of the plan allowance
+    - **Requests today** / **Requests this month** — how many successful Telegram requests you have already run relative to your daily and monthly quota
+    - **Active subscriptions** — the number of subscriptions that are currently active. Paused subscriptions are not counted
+    - **History analysis depth** — the maximum number of days of chat history available for requests, for example up to 7 days on Free, up to 30 days on Basic, and up to 90 days on Pro
+    - **Minimum subscription frequency** — how often a subscription can run to scan the history of a chat, channel, or group, for example no more than once every 3 hours on Free
+    - **Chat and channel history** — whether saved chat history is available on your plan. This feature improves usability by showing the list of chats that were used in recent requests
+    - **Trial subscriptions** — how many trial subscriptions have been used out of the available plan limit. Relevant for the Free plan.
 
-    Click **Change plan** to visit the pricing page and upgrade.
+    Click **Change plan** to go to the pricing page and update your plan.
   </Tab>
-
   <Tab title="Personal data">
-    The **Personal data** tab stores your identity and localization settings:
+    The **Personal data** tab stores account data and localization settings:
 
-    - **Email** — your sign-in address
-    - **Phone** — optional; enter your phone number here for convenient Telegram login when connecting your account
-    - **Country** — set at registration; can be updated here
-    - **Time zone** — affects the displayed time in CoTel bot notifications and subscription run intervals
+    - **Email** — your address for signing in to your account
+    - **Phone** — optional field; enter your phone number for a more convenient Telegram sign-in when connecting your account
+    - **Country** — specified during registration and cannot be changed later
+    - **Time zone** — affects the displayed time in CoTel bot notifications and subscription run intervals. It can be changed
 
-    Click **Save changes** to apply any edits.
+    Click **Save changes** to apply edits.
   </Tab>
-
   <Tab title="Profile settings">
-    The **Profile settings** tab controls interface behavior and security:
+    The **Profile settings** tab controls interface behavior and security settings.
 
     **Interface language**
 
-    Choose between **English** and **Russian**. You can also switch the language at any time using the globe icon in the navigation bar — no profile save required.
+    Choose **English** or **Russian**. You can also switch the language at any time using the globe icon in the navigation panel — saving the profile is not required for this.
 
     **Default AI model**
 
-    Select the AI model used by default for new analyses and new subscriptions:
+    Choosing a default AI model is available on the **Basic** and **Pro** plans. On the **Free** plan, **OpenAI GPT-4.1 mini** is used automatically and cannot be changed.
 
-    - **OpenAI GPT-4.1 mini** — fast, general-purpose analysis; used automatically on the Free plan
+    Choose the AI model that will be used by default for new requests and new subscriptions:
+
+    - **OpenAI GPT-4.1 mini** — fast general-purpose analysis; automatically used on the Free plan
     - **Claude Sonnet 4.6** — deeper analysis of long discussions; available on paid plans
 
-    The default model can be overridden per-query in the query settings panel and per-subscription when creating a subscription.
+    The default model can be overridden for an individual request in the query settings panel and for an individual subscription when it is created.
 
     **Enhanced security**
 
-    When this option is enabled, signing out of CoTel also ends the active Telegram session linked to your account. Enable this if you want to ensure your Telegram access is fully revoked whenever you log out of CoTel.
+    When this option is enabled, signing out of CoTel also ends the active Telegram session linked to your account. Enable it if you want to make sure that Telegram access is fully revoked every time you sign out of CoTel.
 
     **Change password**
 
-    Click **Change password** to open a form where you enter your current password and set a new one (minimum 8 characters).
+    Click **Change password** to open a form where you need to enter your current password and set a new one — at least 8 characters.
 
     **Delete profile**
 
-    Click **Delete profile** to permanently remove your account.
+    Click **Delete profile** to permanently delete your account.
 
     <Warning>
       This action cannot be undone. Your sessions, Telegram session, chat history, subscriptions, and profile data will be deleted.

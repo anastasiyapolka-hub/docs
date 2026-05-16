@@ -1,40 +1,44 @@
 ---
-title: "Connect your Telegram account to CoTel for analysis"
-sidebarTitle: "Connect Account"
-description: "Link your personal Telegram account to CoTel to analyze private chats, groups, and channels you belong to, and create personalized subscriptions. All without storing your message history. "
+title: "Connecting a Telegram Account"
+sidebarTitle: "Account Connection"
+description: "Connect your personal Telegram account to CoTel to analyze private chats, groups, and channels you belong to, and to create personalized subscriptions. The service does not store your message history, passwords, or confidential Telegram account data."
 ---
 
-## Why connect your Telegram account?
+## Why connect a Telegram account?
 
 Connecting your personal Telegram account allows CoTel to:
 
-- Analyze your private chats, groups, and channels that you are a member of
-- Access historical messages for the period allowed by your plan
-- Create subscriptions on private chats
+- Analyze your public and private chats, groups, and channels that you belong to
+- Access message history for the period available on your plan
+- Create subscriptions for public and private chats, groups, and channels
 
 <Warning>
-  CoTel does not store your message history. Analysis is performed on-the-fly using data retrieved from Telegram during each request.
+  CoTel does not store your message history. History analysis is performed on the fly using data retrieved from Telegram during each request.
 </Warning>
 
 ## Two connection methods
 
-- **Phone number**: Enter your phone number, receive a code in Telegram, then confirm the code. If Two-Factor Authentication (2FA) is enabled, CoTel will also prompt you to enter your Telegram password.
-- **QR code**: Faster sign-in — generate a QR code and scan it using the Telegram mobile app (**Settings → Devices → Link Desktop Device**).
+- **Phone number**: enter your phone number, receive a code in Telegram, and confirm it. If two-factor authentication (2FA) is enabled, CoTel will also ask you to enter your Telegram password.
+- **QR code**: a faster sign-in method — generate a QR code and scan it in the Telegram mobile app (**Settings → Devices → Link Desktop Device**). Two-factor authentication will also be required if enabled.
 
-## Data source options in the workspace
+<Warning>
+  CoTel does not store your Telegram two-factor authentication password. If Telegram requests a 2FA password, it is encrypted directly in the browser before being sent to the server using a one-time 2048-bit RSA key and the OAEP / SHA-256 scheme. On the server, the password is decrypted only in runtime memory, used once to authorize Telegram, and immediately deleted.
+</Warning>
 
-The **Connect to Telegram** section in the sidebar offers three modes:
+## CoTel connection modes for Telegram
 
-1. **My Telegram account** — Uses your personal Telegram account (requires phone or QR authentication).
-2. **CoTel service account** — Uses CoTel's shared service account (no personal authentication needed; public chats and channels only).
-3. **Telegram file (JSON)** — Upload a Telegram export JSON file for offline analysis (advanced).
+The **Connect to Telegram** section in the sidebar offers two modes:
+
+1. **My Telegram account** — uses your personal Telegram account and requires authorization by phone number or QR code.
+2. **CoTel service account** — uses a CoTel service account, does not require personal authorization, and is available only for public channels and groups.
 
 <Note>
-  Subscribing to private and personal chats requires signing in with your personal Telegram account. The CoTel service account only accesses public chats and channels.
+  Subscriptions to private and personal chats require signing in through your personal Telegram account. The CoTel service account can access only public channels and groups.
 </Note>
 
-## Session management
+## Managing your Telegram session
 
-- Your Telegram session is securely maintained by CoTel.
+- Your Telegram session is stored in CoTel in encrypted form using Fernet / AES-128. It is used only to perform actions that you initiate yourself: analysis of selected chats, as well as the subscriptions you create.
 - To end the session, click **End session** in the Telegram status panel in the sidebar.
-- With **Enhanced security** enabled in your profile settings, signing out of CoTel also ends your Telegram session automatically.
+- If **Enhanced security** is enabled in your profile settings, signing out of CoTel also automatically ends your Telegram session.
+- When you delete your account, all saved sessions are deleted.
