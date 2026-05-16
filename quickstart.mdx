@@ -1,83 +1,60 @@
 ---
-title: "Quickstart: run your first CoTel Telegram analysis"
-description: "Follow these steps to create an account, connect Telegram, and run your first AI analysis of a chat or channel in under five minutes."
+title: "Quickstart: Run Your First Telegram Analysis in CoTel"
+description: "Follow these steps to create an account, connect Telegram, and run your first AI analysis of a chat, group, or channel in less than five minutes."
 ---
 
-CoTel is ready to use as soon as you connect a Telegram source. This guide walks you through every step — from creating your account to reading your first AI-generated result. The whole process takes under five minutes.
+CoTel is ready to use as soon as you connect Telegram. This guide will walk you through every step — from creating an account to viewing your first AI-generated result. The whole process takes less than five minutes.
 
 <Tip>
-  The Free plan includes 3 requests per day — more than enough to evaluate CoTel before upgrading. No credit card is required.
+  The Free plan includes 3 Telegram requests per day — enough to evaluate CoTel before switching to a paid plan. No bank card is required to use the Free plan.
 </Tip>
 
 <Steps>
-  <Step title="Create your CoTel account">
-    Open CoTel and click **Sign in / Sign up**. Enter your email address and click **Continue**, then select **Sign up** on the next screen.
+  <Step title="Create a CoTel account">
+    Open CoTel and click **Sign in / Sign up**. Enter your email address and click **Continue**, then choose **Sign up** on the next screen.
 
-    Fill in the registration form:
+    Fill out the registration form:
 
-    - **Email** — the address where your verification code will be sent
-    - **Country** — selected once at registration and used to localize settings
+    - **Email** — the address where the verification code will be sent
+    - **Country** — your country of actual residence. It is selected once during registration and used to localize settings
     - **Time zone** — affects the displayed time in CoTel bot notifications for subscriptions
-    - **Password** — must be at least 8 characters
-    
-    Check the box confirming you have read the Privacy Policy and Terms of Service and are at least 16 years old, then click **Sign up**.
-  </Step>
+    - **Password** — must be at least 8 characters long
 
+    Check the box confirming that you have read the **Privacy Policy** and **Terms of Service**, and that you are at least 16 years old, then click **Sign up**. It is recommended that you review these documents first by following the links.
+  </Step>
   <Step title="Verify your email">
-    CoTel sends a 6-digit verification code to the email address you provided. Enter the code in the verification screen and click **Verify**. If the code doesn't arrive within a minute, click **Resend code**.
+    CoTel will send a 6-digit verification code to the email address you provided. Enter the code on the verification screen and click **Verify**. If the code does not arrive within a minute, click **Resend code**.
 
-    Once verified, you are signed in automatically.
+    After verification, you will be signed in automatically.
   </Step>
-
   <Step title="Sign in to your account">
-    On future visits, open CoTel and click **Sign in / Sign up**. Enter your email address, click **Continue**, then enter your password and click **Sign in**.
+    On your next visits, open CoTel and click **Sign in / Sign up**. Enter your email address, click **Continue**, then enter your password and click **Sign in**.
 
-    If you forget your password, click **Forgot your password?** to request a reset code by email.
+    If you forgot your password, click **Forgot your password?** to request a password reset code by email.
   </Step>
-
   <Step title="Connect Telegram">
-    In the left sidebar of the work area, expand the **Connect to Telegram** section. Choose one of two connection methods:
+    In the left sidebar of the workspace, open the **Connect to Telegram** section. Choose one of two connection methods:
 
-    - **My Telegram account** — CoTel authenticates as your personal Telegram account. You can analyze private chats, groups, and channels your account has access to. Enter your phone number and confirm the code sent to your Telegram app. If your account has two-factor authentication enabled, you will also be prompted for your Telegram password.
-    - **CoTel service account** — CoTel uses its own Telegram account to read publicly accessible channels. No personal login is required.
+    - **My Telegram account** — CoTel authorizes through your personal Telegram account. You will be able to analyze private chats, groups, and channels that your account has access to. Enter your phone number and confirm the code sent to the Telegram app. If two-factor authentication is enabled on your account, CoTel will also ask for your Telegram password.
+    - **CoTel service account** — CoTel uses its own Telegram account to read publicly available channels and groups. Personal Telegram sign-in is not required.
 
-    After a successful connection, your username appears in the sidebar with a green status indicator.
+    After your personal account is connected successfully, your username will appear in the sidebar with a green status indicator. You can end the session at any time using **End session**.
   </Step>
+  <Step title="Choose a chat, channel, or group">
+    After connecting, the chats and channels available to you will appear in the **Chat requests** section of the sidebar. Select the one you need from the list, or enter the name or link directly in the chat input field.
 
-  <Step title="Select a chat or channel">
-    Once connected, the **Chat requests** section of the sidebar shows your available chats and channels. Click a chat from the list, or type a name or link directly into the chat input field.
-
-    You can also configure **Query settings** (expand that section) to adjust the analysis history period in days and the AI model to use for this request.
+    You can also open **Query settings** to change the history analysis period in days and select an AI model for this request. The **analysis period** determines how many days back from the current date CoTel will scan the chat message history.
   </Step>
-
-  <Step title="Choose an analysis type and enter your prompt">
-    In the main input area at the bottom of the screen, type your request. The analysis type is determined by what you ask:
-
-    - **Summarization** — ask for a summary or recap of messages
-    - **Notes / Digest** — ask for structured notes or a topic breakdown
-    - **Search** — ask a specific question to find relevant messages
-    - **Keywords** — ask to extract key terms, names, or entities
-
-    You can also pick a ready-made template from the templates section to pre-fill a well-formed prompt.
+  <Step title="Enter a query for the selected chat, channel, or group">
+    In the main input area at the bottom of the screen, enter your query. This is the user prompt the AI will receive when analyzing the chat history. Make your request as specific as possible to get the best analysis result. You can view example queries **here**.
   </Step>
+  <Step title="Run the analysis and get the result">
+    Click the **Play** button or press Enter to start the analysis. While CoTel retrieves messages and sends them to the AI model, a loading indicator will appear. Processing usually takes from a few seconds to a couple of minutes, depending on the volume of messages and service load.
 
-  <Step title="Run the analysis and view results">
-    Click the **play** button (or press Enter) to start the analysis. A loading indicator appears while CoTel fetches messages and sends them to the AI model. Processing typically takes a few seconds to a couple of minutes depending on the volume of messages.
-
-    Results appear in the main panel as formatted text.
-  </Step>
-
-  <Step title="Export or save the result">
-    After the analysis completes, you can:
-
-    - **Copy** the result to your clipboard
-    - **Export** it to a portable format
-    - **Repeat** the same analysis later from the History section
-    
-    All past analyses are saved to your history and accessible from the **History** navigation item.
+    The result will appear in the main panel as formatted text.
   </Step>
 </Steps>
 
 <Note>
-  Chat analysis is performed by a third-party AI model (OpenAI). Do not upload secret or confidential data.
+  Chat analysis is performed by a third-party AI model. Do not upload secret or confidential data.
 </Note>

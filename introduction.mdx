@@ -1,54 +1,57 @@
 ---
-title: "CoTel: the AI copilot for Telegram"
-description: "CoTel connects to your Telegram account and uses AI to summarize chats, extract keywords, search messages, and send automated digest notifications."
+title: "CoTel: AI Copilot for Working with Telegram"
+description: "CoTel is an AI service that speeds up working with Telegram and helps process large volumes of messages without manually scrolling through chats and channels. Instead of browsing through thousands of messages, you describe what you need, and CoTel reads for you — returning structured summaries, thematic digests, and smart search results in seconds. Connect Telegram and run your first analysis to see how CoTel saves time and turns a stream of messages into a clear result."
 ---
-
-CoTel is an AI-powered service that lets you analyze any Telegram chat, channel, or group without leaving your browser. Instead of scrolling through thousands of messages, you describe what you need and CoTel's AI does the reading for you — returning structured summaries, topic digests, smart search results, or extracted keywords in seconds.
 
 ## What CoTel does
 
-CoTel reads messages from a Telegram source you authorize, sends them to an AI model for processing, and returns a structured result. You can run one-off analyses on demand or set up automated subscriptions that monitor a chat on a schedule and push findings to you via a Telegram bot notification.
+CoTel reads messages from the Telegram account you authorize, sends them to an AI model for processing, and returns a structured result. You can run a one-time analysis on demand or set up automatic subscriptions that monitor a chat, channel, or group on a schedule and send you results through notifications from the CoTel Telegram bot.
 
-The interface is available in **English** and **Russian**, switchable at any time via the globe icon in the navigation bar.
+If you do not want to authorize your personal Telegram account in our service, you can use CoTel service accounts, which allow you to use the service with public channels and groups.
 
-## Analysis types
+The interface is available in **English** and **Russian**, and you can switch languages at any time using the globe icon in the navigation panel.
 
-CoTel offers four core analysis modes:
+## Chat analysis on demand
+
+Formulate a question for a specific Telegram chat, channel, or group — CoTel will access the history of the selected chat, find what matters, prepare a summary of the discussion, and return a structured answer. Examples of how this feature can be used:
 
 | Type | What it produces |
 | --- | --- |
-| **Summarization** | A concise summary of all messages in the selected period, highlighting key ideas and conclusions |
-| **Notes / Digest** | Structured notes organized by topic and subtopic — useful for long technical or project discussions |
-| **Search** | AI-powered semantic search across chat history, returning relevant messages with context and source references |
-| **Keywords** | Automatic extraction of important terms, names, entities, and topics from the conversation |
+| **Finding a specific discussion** | For questions like “Was the launch of the new feature discussed in the chat?”. CoTel searches relevant messages in the history, finds the needed part of the discussion, and returns a short answer with context. |
+| **Getting the main topics for a period** | Ask: “What were the main topics discussed over the last 7 days?”. CoTel analyzes messages for the selected period and highlights the main topics, recurring questions, important conclusions, and discussion dynamics. |
+| **News summary from a channel** | Select a news or industry Telegram channel and ask: “Summarize today’s news”. CoTel collects the key news, removes noise, and returns a compact digest. |
+| **Extracting ideas from a discussion** | Example query: “What ideas were suggested in the chat?”. CoTel collects suggestions, hypotheses, product thoughts, marketing ideas, or possible solutions. |
+| **Finding decisions made** | For the question “What decisions were made this week?”, CoTel separates decisions from the general discussion and returns a list of agreements, selected options, and next steps. |
 
-## Automated subscriptions
+There are many more ways to use Telegram message history analysis — it all depends on your goals and work context. You can learn more about use cases **here**.
 
-Subscriptions let CoTel periodically monitor a chat or channel on your behalf. You define a topic or prompt, choose a check frequency, and CoTel runs the analysis automatically — then sends you a Telegram notification when it finds relevant content or has a new digest ready. The Free plan includes up to 2 trial subscriptions; paid plans unlock up to 20 active subscriptions with higher check frequencies.
+## Automatic subscriptions
+
+Subscriptions allow CoTel to periodically monitor a chat or channel on your behalf. You define a topic or prompt, choose how often the history should be checked, and CoTel runs the analysis automatically — then sends you a Telegram notification when it finds relevant content or when a new digest is ready. The Free plan includes up to 2 trial subscriptions for 5 days; paid plans unlock up to 20 active subscriptions with more frequent checks.
 
 ## AI models
 
-Two AI models are available for analysis:
+Two AI models are currently available for analysis:
 
-- **OpenAI GPT-4.1 mini** — fast, general-purpose analysis (default on the Free plan)
-- **Claude Sonnet 4.6** — deeper analysis suited to long discussions (available on paid plans)
+- **OpenAI GPT-4.1 mini** — fast general-purpose analysis, used by default on the Free plan
+- **Claude Sonnet 4.6** — deeper analysis suitable for long discussions, available on paid plans
 
-## Explore the docs
+## Explore the documentation
 
 <CardGroup cols={2}>
   <Card title="Quickstart" icon="rocket" href="/quickstart">
-    Create an account, connect Telegram, and run your first analysis in minutes
+    Create an account, connect Telegram, and run your first analysis in a few minutes
   </Card>
 
-  <Card title="Analysis types" icon="magnifying-glass" href="/features/analysis-types">
+  <Card title="Message history analysis" icon="newspaper" href="/features/analysis-types">
     Learn what each analysis mode does and when to use it
   </Card>
 
   <Card title="Subscriptions" icon="bell" href="/features/subscriptions">
-    Set up automated monitoring with Telegram notifications
+    Set up automatic monitoring with Telegram notifications
   </Card>
 
-  <Card title="Connect Telegram" icon="paper-plane" href="/telegram/connect-account">
-    Authorize your Telegram account or use the CoTel service account
+  <Card title="Connecting Telegram" icon="link" href="/telegram/connect-account">
+    Authorize your Telegram account or use a CoTel service account
   </Card>
 </CardGroup>
