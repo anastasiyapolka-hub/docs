@@ -1,100 +1,107 @@
 ---
-title: "Frequently asked questions about CoTel for Telegram"
+title: "Frequently Asked Questions About CoTel for Telegram"
 sidebarTitle: "FAQ"
-description: "Answers to common questions about CoTel — plans and pricing, privacy, analysis types, subscriptions, Telegram connection, and account management."
+description: "Answers to frequently asked questions about CoTel: plans and pricing, privacy, analysis types, subscriptions, connecting Telegram, and account management."
 ---
 
-CoTel is an AI copilot for Telegram that lets you analyze chats, channels, and groups without leaving your browser. Whether you are just getting started or trying to understand a specific feature, the answers below cover the most common questions.
+CoTel is an AI copilot for Telegram that lets you analyze chats, channels, and groups without leaving your browser. If you are just starting to use the service or want to understand a specific feature, below are answers to the most common questions.
 
-## General
+## General questions
 
 <AccordionGroup>
   <Accordion title="What is CoTel?">
-    CoTel is a web-based AI assistant for Telegram. It connects to your Telegram account (or uses a shared service account for public chats) and lets you run AI-powered analysis on any chat, channel, or group. You can summarize discussions, search for specific topics, extract keywords, and set up automated subscriptions that deliver periodic digests or alerts directly to your Telegram.
+    CoTel is a web service with an AI assistant for Telegram. It connects to your Telegram account or uses a shared service account for public chats, and lets you run AI analysis of any chat, channel, or group. You can get discussion summaries, search for specific topics, and set up automatic subscriptions that send periodic digests or notifications directly to your Telegram.
   </Accordion>
 
-  <Accordion title="Is CoTel free to use?">
-    Yes. CoTel offers a Free plan at no cost that includes 3 requests per day (60 per month), up to 7 days of chat history analysis, and 2 trial subscriptions. Paid plans — Basic ($9/mo) and Pro ($24/mo) — unlock higher request limits, longer history windows, more active subscriptions, and shorter subscription intervals.
+  <Accordion title="Can I use CoTel for free?">
+    Yes. CoTel has a Free plan that includes 3 requests per day, 60 requests per month, chat history analysis up to 7 days, and 2 trial subscriptions. Paid plans — Basic ($9/month) and Pro ($24/month) — unlock higher request limits, deeper history, more active subscriptions, and shorter subscription check intervals.
   </Accordion>
 
   <Accordion title="What languages does CoTel support?">
-    The CoTel interface is available in **English** and **Russian**. You can switch languages at any time by clicking the globe icon in the navigation bar.
+    The CoTel interface is available in **English** and **Russian**. You can switch the language at any time by clicking the globe icon in the navigation panel.
 
-    Analysis itself is not limited to these two languages. Because the underlying AI models understand natural language broadly, CoTel can analyze chat content written in most languages — you write your query in the language you prefer and the AI handles the rest.
+    The analysis itself is not limited to these two languages. Because the underlying AI models understand natural language broadly, CoTel can analyze chat content in most languages — you write your query in the language you prefer, and the AI handles the rest.
   </Accordion>
 
   <Accordion title="What AI models does CoTel use?">
-    CoTel currently supports two models, which you can choose per-query in the Query settings panel (sidebar → Chat requests → Query settings → AI model) or set a default in your profile (Profile → Profile settings → Default AI model):
+    CoTel currently supports two models, which you can choose for an individual request in the query settings panel (**sidebar → Chat analysis → Query settings → AI model**) or set as the default in your profile (**Profile → Profile settings → Default AI model**):
 
-    - **OpenAI GPT-4.1 mini** — used for fast, everyday analysis. This is the default model on the Free tier.
+    - **OpenAI GPT-4.1 mini** — used for fast everyday analysis. This is the default model on the Free plan.
     - **Claude Sonnet 4.6** — better suited for deeper analysis of long discussions with a large amount of context.
 
-    Free accounts always use OpenAI for subscriptions regardless of the setting.
+    On Free accounts, subscriptions always use OpenAI regardless of the setting.
+  </Accordion>
+
+  <Accordion title="Can I get help or send feedback about the service?">
+    Yes. You can send a message to the CoTel team through the **Feedback** section.
+
+    To open the form, click your profile in the lower part of the sidebar and choose **Feedback**. In the form, you can describe a question, bug, or suggestion for improving the service, choose a request category, and submit it.
+
+    We will review requests in order and will try to take your feedback into account as CoTel develops.
   </Accordion>
 </AccordionGroup>
 
-## Privacy & data
+## Privacy and data
 
 <AccordionGroup>
   <Accordion title="Does CoTel store my Telegram messages?">
-    No. Analysis is performed on-the-fly: CoTel reads the relevant messages from Telegram at the moment you run a query and passes them to the AI model. CoTel does not build or retain a copy of your message history. The app itself notes: "We don't store message history."
+    No. Analysis is performed on the fly: CoTel reads relevant messages from Telegram when you run a request and passes them to the AI model. CoTel does not create or store a copy of your message history. The application itself also states: “We do not store message history.”
   </Accordion>
 
   <Accordion title="Is my Telegram password safe?">
-    CoTel uses Telegram's official authentication flow. Your Telegram password is only used during the sign-in step to verify your identity with Telegram directly. It is never stored by CoTel. If you use QR-code login, no password is transmitted to CoTel's servers at all.
+    CoTel uses the official Telegram authorization process. Your Telegram password is used only during sign-in to verify your identity directly through Telegram. It is never stored in CoTel. If you use QR code sign-in, the password is not sent to CoTel servers at all.
 
-    For accounts with Two-Factor Authentication (2FA) enabled, your Telegram password is encrypted in the browser before being sent and is used only to complete the Telegram session handshake.
+    For accounts with two-factor authentication (2FA) enabled, the Telegram password is encrypted in the browser before being sent and is used only to complete the Telegram session setup.
   </Accordion>
 
-  <Accordion title="Should I upload confidential data?">
-    No. CoTel displays the following disclaimer on the analysis dashboard:
+  <Accordion title="Can I upload confidential data?">
+    No. CoTel shows the following disclaimer in the analysis panel:
 
     > "Chat analysis is performed by a third-party AI model (OpenAI). Do not upload secret or confidential data."
 
-    Messages you submit for analysis are processed by OpenAI's API. Avoid running analysis on chats that contain trade secrets, personal identification information, or any other sensitive data you would not want processed by a third-party AI provider.
+    Messages that you send for analysis are processed through the OpenAI API. Do not run analysis on chats containing trade secrets, personal identifiers, or any other sensitive data that you would not want to share with a third-party AI provider.
   </Accordion>
 
   <Accordion title="What happens to my data when I delete my account?">
-    Deleting your CoTel profile permanently removes all data associated with your account: your active Telegram session, saved chat history, all subscriptions, and your profile working data. This action cannot be undone. To delete your account, go to Profile → Profile settings → Delete profile and follow the confirmation steps.
+    Deleting your CoTel profile permanently removes all data associated with your account: the active Telegram session, saved chat history, all subscriptions, and profile working data. This action cannot be undone. To delete your account, go to **Profile → Profile settings → Delete profile** and complete the confirmation steps.
   </Accordion>
 </AccordionGroup>
 
-## Analysis
+## Chat requests
 
 <AccordionGroup>
-  <Accordion title="What analysis types are available?">
-    CoTel supports four main analysis modes that you select when writing your query:
+  <Accordion title="What questions can I ask chats, groups, and channels?">
+    You can ask questions in plain language — as if you were asking a person to quickly read the chat history and find what matters. For example:
 
-    - **Summarization** — produces a concise summary of the conversation over the selected time period.
-    - **Notes / Digest** — extracts key points, decisions, or highlights into a structured digest format.
-    - **Search** — finds messages or threads that match a specific topic, keyword, or question.
-    - **Keywords** — identifies the most prominent topics and terms discussed in the chat.
-
-    You describe what you want in plain language; the AI model interprets your query and applies the appropriate approach.
+    - what important things were discussed in recent days;
+    - whether a specific topic, person, company, or event was mentioned;
+    - what decisions or conclusions appeared in the discussion;
+    - which messages look like announcements, complaints, signals, or news;
+    - what changed on a topic during the selected period. CoTel analyzes the available history of the selected Telegram source and forms an answer based on the messages it finds. The more precise your question, the more useful the result will be.
   </Accordion>
 
-  <Accordion title="How far back can CoTel analyze my chat history?">
+  <Accordion title="How far back can CoTel analyze chat history?">
     The available history window depends on your plan:
 
-    | Plan  | History analysis period |
-    |-------|------------------------|
-    | Free  | Up to 7 days           |
-    | Basic | Up to 30 days          |
-    | Pro   | Up to 90 days          |
+    | Plan | History analysis period |
+    | --- | --- |
+    | Free | Up to 7 days |
+    | Basic | Up to 30 days |
+    | Pro | Up to 60 days |
 
-    You control how many days to look back in **Query settings** (sidebar → Chat requests → Query settings → History analysis period, days). If you set a value that exceeds your plan's limit, CoTel will show an error and prompt you to reduce it or upgrade.
+    You control the number of days for analysis in **Query settings** (**sidebar → Chat analysis → Query settings → History analysis period, days**). If you enter a value above your plan limit, CoTel will show an error and suggest reducing the period or switching to a higher plan.
   </Accordion>
 
   <Accordion title="Can I analyze private chats?">
-    Yes, but only if you connect your personal Telegram account. Private chats, private groups, and private channels are not accessible through the CoTel service account, which is limited to public chats and channels.
+    Yes, but only if you have connected your personal Telegram account. Private chats, private groups, and private channels are not available through the CoTel service account, which is limited to public chats and channels.
 
     To connect your personal account, use the **Connect to Telegram** section in the sidebar and sign in via QR code or phone number.
   </Accordion>
 
-  <Accordion title="What file format can I import for analysis?">
-    CoTel accepts **Telegram export JSON files** — the format produced by Telegram Desktop's built-in export feature (Settings → Advanced → Export Telegram data). Select "Telegram file (JSON)" as the data source in the sidebar, then import the file.
+  <Accordion title="Are there limitations for chat requests?">
+    Yes. CoTel answers only based on messages that are available for analysis in the selected source and selected period. If the needed information was not in the history, was published before the selected period, or is located in a private chat without access, the AI model will not be able to find it correctly.
 
-    Note that Telegram's HTML export format is not supported; make sure to export as JSON.
+    It is better to ask specific questions: specify the topic, period, events of interest, or response format. For example, instead of “what happened there?”, write: “Briefly list the main discussions about relocation over the last 7 days.”
   </Accordion>
 </AccordionGroup>
 
@@ -102,23 +109,24 @@ CoTel is an AI copilot for Telegram that lets you analyze chats, channels, and g
 
 <AccordionGroup>
   <Accordion title="What is a subscription?">
-    A subscription is a recurring AI analysis job. You define a chat or channel to monitor, a query describing what to look for (for example: "new product announcements" or "weekly digest of discussions"), and how often CoTel should check for new messages. CoTel runs the analysis automatically at the chosen interval and sends the results to your Telegram account via the CoTel bot.
+    A subscription is a recurring AI analysis task. You specify a chat or channel to monitor, a request describing what to look for — for example, “new product announcements” or “weekly discussion digest” — and choose how often CoTel should check new messages. CoTel automatically runs analysis at the selected interval and sends results to your Telegram account through the CoTel bot.
 
     There are two subscription types:
-    - **Events** — reacts to messages matching your query and sends a list of specific matching messages.
-    - **Digest** — prepares an AI summary of all new messages for the given period.
+
+    - **Events** — reacts to messages matching your request and sends a list of specific found messages.
+    - **Digest** — prepares an AI summary of all new messages for the selected period.
   </Accordion>
 
-  <Accordion title="How do I get notified?">
-    CoTel delivers subscription results directly to your Telegram account through the CoTel bot. To receive notifications you must start the bot at least once: in the Subscriptions panel, click **Launch bot**. After that, every time a subscription run finds a match (Events) or completes a digest (Digest), the result is sent as a message from the CoTel bot in your Telegram app.
+  <Accordion title="How will I receive notifications?">
+    CoTel sends subscription results directly to your Telegram account through the CoTel bot. To receive notifications, you need to start the bot at least once: in the **Subscriptions** panel, click **Start bot**. After that, whenever a subscription run finds a match (**Events**) or prepares a digest (**Digest**), the result will be sent as a message from the CoTel bot in your Telegram app.
   </Accordion>
 
   <Accordion title="How do trial subscriptions work?">
-    The Free plan includes up to 2 trial subscriptions. Trial subscriptions work the same as regular subscriptions but expire automatically after their trial period ends — you cannot delete them manually before they expire. Once both trial subscriptions have expired, the Free plan no longer allows creating new subscriptions. Upgrade to the Basic or Pro plan to create permanent, non-expiring subscriptions.
+    The Free plan includes up to 2 trial subscriptions. Trial subscriptions work like regular subscriptions, but automatically expire after the trial period ends — they cannot be deleted manually before expiration. After both trial subscriptions expire, the Free plan no longer allows creating new subscriptions. Switch to Basic or Pro to create permanent subscriptions without automatic expiration.
   </Accordion>
 
   <Accordion title="Can I subscribe to private chats?">
-    Subscribing to private chats, private groups, and private channels is only available when you are signed in with your personal Telegram account. The CoTel service account can only monitor public chats and channels. You will see a note in the subscription creation form if you attempt to select a private chat without a personal account connected.
+    Subscriptions to private chats, private groups, and private channels are available only when signing in through your personal Telegram account. The CoTel service account can monitor only public chats and channels. If you try to select a private chat without a connected personal account, a corresponding note will appear in the subscription creation form.
   </Accordion>
 </AccordionGroup>
 
@@ -126,16 +134,16 @@ CoTel is an AI copilot for Telegram that lets you analyze chats, channels, and g
 
 <AccordionGroup>
   <Accordion title="How do I change my plan?">
-    Open your profile by clicking your avatar or name in the top navigation, then click **Change plan**. Select the plan you want and confirm. The change takes effect immediately and your new limits are shown in the Profile → Limits tab.
+    Open your profile by clicking the avatar or name in the top navigation, then click **Change plan**. Choose the plan you want and confirm your choice. The change takes effect immediately, and the new limits will be shown in **Profile → Limits**.
   </Accordion>
 
   <Accordion title="How do I change the interface language?">
-    Click the **globe icon** in the navigation bar. This toggles the interface between English and Russian. The setting is applied immediately without requiring a page reload.
+    Click the **globe icon** in the navigation panel. This switches the interface between English and Russian. The setting is applied immediately, without reloading the page.
   </Accordion>
 
-  <Accordion title="What happens if I forget my CoTel password?">
-    On the login page, click **Forgot your password?** below the password field. Enter your email address and CoTel will send a password reset code to that address. Enter the code on the next screen along with your new password to complete the reset.
+  <Accordion title="What should I do if I forgot my CoTel password?">
+    On the sign-in page, click **Forgot your password?** under the password field. Enter your email address, and CoTel will send a password reset code to it. On the next screen, enter the code and your new password to complete the reset.
 
-    If you do not receive the email, check your spam folder. You can request a new code using the **Resend code** button after the cooldown period expires.
+    If the email does not arrive, check your Spam folder. You can request a new code using the **Resend code** button after the waiting period ends.
   </Accordion>
 </AccordionGroup>

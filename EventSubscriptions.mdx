@@ -1,32 +1,32 @@
 ---
 title: "Examples of Event Subscriptions"
 sidebarTitle: "Subscriptions: Events"
-description: "Practical scenarios for event subscriptions in CoTel: how to track listings, jobs, flight deals, rentals, discounts, user issues, and other important Telegram messages."
+description: "Practical scenarios for event subscriptions in CoTel: how to track announcements, job postings, flight deals, rentals, discounts, user problems, and other important Telegram messages."
 ---
 
-**Event** subscriptions help you avoid missing important messages in Telegram chats and channels. You define a condition: what exactly to look for, where to look, and how often to check new messages. When CoTel finds matching messages, it sends you a Telegram notification.
+**Event** subscriptions help you avoid missing important messages in Telegram chats and channels. You define a condition: what exactly to look for, where to look, and how often to check new messages. When CoTel finds matching messages, it sends a notification to Telegram.
 
-This subscription type is useful when you do not want to read the whole chat manually and only need a signal when something specific appears: a listing, job opening, discount, error, recommendation, product mention, or important event.
+This subscription type is useful when you do not want to read the entire chat manually, but need a signal when something specific appears: an announcement, job posting, discount, error, recommendation, product mention, or important event.
 
 <Info>
-  An Event subscription works best when the query is specific: what to look for, which words or meanings to consider, which parameters matter, and what can be ignored.
+  An event subscription works best when the request is specific: what to look for, which words or meanings to consider, which parameters matter, and what can be ignored.
 </Info>
 
-## How each example is structured
+## How the examples are structured
 
 Each scenario below shows:
 
-- **Subscription name** — how you can name it in CoTel
+- **Subscription name** — what you can call it in CoTel
 - **Subscription type** — Events
-- **Where to use it** — the suitable type of chat or channel
-- **Frequency** — a reasonable check interval
-- **Example query** — what to write in the query field
-- **What you will receive** — what kind of result you will get in Telegram
+- **Where to use it** — suitable type of chat or channel
+- **Frequency** — a reasonable checking interval
+- **Example request** — what to write in the request field
+- **What you will receive** — what result you will get in Telegram
 
 ## Shopping, marketplaces, and listings
 
 <CardGroup cols={1}>
-  <Card title="1. Find iPhone 15 listings in a marketplace chat" icon="smartphone">
+  <Card title="1. Find an iPhone 15 in a marketplace chat" icon="smartphone">
     **Subscription name:** `iPhone 15 in marketplace`
 
     **Subscription type:** Events
@@ -35,8 +35,8 @@ Each scenario below shows:
 
     **Frequency:** once every 1 hour
 
-    **Example query:**\
-    “Notify me when there are listings for iPhone 15, iPhone 15 Pro, or iPhone 15 Pro Max. I am especially interested in new devices or devices in good condition, with the price included.”
+    **Example request:**\
+    “Notify me when listings appear for iPhone 15, iPhone 15 Pro, or iPhone 15 Pro Max. I am especially interested in new devices or devices in good condition, with a price included.”
 
     **What you will receive:**\
     Messages with matching listings: model, price, condition, city or district, contact, or link if included in the message.
@@ -47,51 +47,51 @@ Each scenario below shows:
 
     **Subscription type:** Events
 
-    **Where to use it:** parenting marketplace chat, city chat, district chat
+    **Where to use it:** parenting marketplace, city chat, neighborhood chat
 
     **Frequency:** once every 3 hours
 
-    **Example query:**\
-    “Notify me if someone is selling a baby stroller in good condition. I am especially interested in lightweight strollers, compact models, and listings with a photo or price.”
+    **Example request:**\
+    “Notify me if someone is selling a baby stroller in good condition. I am especially interested in lightweight strollers, walking strollers, and listings with photos or a price.”
 
     **What you will receive:**\
-    Matching listings with a short description of the model, price, condition, and pickup terms.
+    Found listings with a short description of the model, price, condition, and pickup terms.
   </Card>
 
-  <Card title="3. Baby clothes and items for 12–18 months" icon="shirt">
+  <Card title="3. Baby items for 12–18 months" icon="shirt">
     **Subscription name:** `Baby items 12–18 months`
 
     **Subscription type:** Events
 
-    **Where to use it:** parenting marketplace chat, district chat, city parenting chat
+    **Where to use it:** parenting marketplace, neighborhood chat, city parenting chat
 
     **Frequency:** once every 3 hours
 
-    **Example query:**\
-    “Notify me when someone is selling baby clothes, shoes, or toys for ages 12–18 months in good condition.”
+    **Example request:**\
+    “Notify me if someone is selling children’s clothing, shoes, or toys for ages 12–18 months in good condition.”
 
     **What you will receive:**\
-    Listings with item details, age or size, price, condition, and seller contact.
+    Listings with items, age or size, price, condition, and seller contact.
   </Card>
 
-  <Card title="4. Discounts on tech products" icon="badge-percent">
+  <Card title="4. Tech discounts" icon="badge-percent">
     **Subscription name:** `Tech discounts`
 
     **Subscription type:** Events
 
-    **Where to use it:** discounts channel, city shopping chat, promo code chat
+    **Where to use it:** discount channel, city shopping chat, promo code chat
 
     **Frequency:** once every 1 hour
 
-    **Example query:**\
-    “Notify me when there are discounts on iPhone, MacBook, Apple headphones, home appliances, or good store deals.”
+    **Example request:**\
+    “Notify me when discounts appear on iPhone, MacBook, Apple headphones, home appliances, or good store deals.”
 
     **What you will receive:**\
     Messages with discounts: product, price, store, promotion terms, and link if available.
   </Card>
 </CardGroup>
 
-## Travel, flight deals, and trips
+## Travel, flights, and trips
 
 <CardGroup cols={1}>
   <Card title="5. Cheap flights to Europe" icon="plane">
@@ -103,11 +103,11 @@ Each scenario below shows:
 
     **Frequency:** once every 30 minutes or 1 hour
 
-    **Example query:**\
-    “Notify me when there are cheap flights from Tbilisi, Kutaisi, Yerevan, or Istanbul to Europe. I am especially interested in destinations under 150 euros one way.”
+    **Example request:**\
+    “Notify me when cheap flights appear from Tbilisi, Kutaisi, Yerevan, or Istanbul to Europe. I am especially interested in routes under 150 euros one way.”
 
     **What you will receive:**\
-    Messages with destination, approximate price, dates, airline, and link if included in the post.
+    Messages with destination, approximate price, dates, airline, and link if it was included in the post.
   </Card>
 
   <Card title="6. Tickets and routes to Italy" icon="map">
@@ -119,19 +119,19 @@ Each scenario below shows:
 
     **Frequency:** once every 1 hour
 
-    **Example query:**\
-    “Notify me when there are tickets, routes, or discounts to Italy: Rome, Milan, Venice, Bologna, Naples.”
+    **Example request:**\
+    “Notify me when tickets, routes, or discounts to Italy appear: Rome, Milan, Venice, Bologna, Naples.”
 
     **What you will receive:**\
-    Messages related to Italy: route, destination, price, dates, terms, and link if provided.
+    Messages related to Italy: route, destination, price, dates, terms, and link if included.
   </Card>
 </CardGroup>
 
 ## Real estate and local listings
 
 <CardGroup cols={1}>
-  <Card title="7. Apartment rentals in Vake or Vera" icon="house-plus">
-    **Subscription name:** `Vake / Vera rentals`
+  <Card title="7. Apartment rental in Vake or Vera" icon="house-plus">
+    **Subscription name:** `Rental Vake / Vera`
 
     **Subscription type:** Events
 
@@ -139,27 +139,27 @@ Each scenario below shows:
 
     **Frequency:** once every 1 hour
 
-    **Example query:**\
-    “Notify me when there are apartment rental listings in Vake or Vera. I am interested in 1–2 bedrooms, decent renovation, preferably with parking.”
+    **Example request:**\
+    “Notify me when apartment rental listings appear in Vake or Vera. I am interested in 1–2 bedrooms, decent renovation, preferably with parking.”
 
     **What you will receive:**\
-    Listings with district, price, number of rooms, terms, contacts, and link if available.
+    Listings with district, price, number of rooms, terms, contacts, and link if included.
   </Card>
 
-  <Card title="8. Apartments for sale in Tbilisi" icon="building-2">
+  <Card title="8. Apartment sales in Tbilisi" icon="building-2">
     **Subscription name:** `Buying an apartment in Tbilisi`
 
     **Subscription type:** Events
 
-    **Where to use it:** real estate channel, district chat, buyers’ and renters’ chat
+    **Where to use it:** real estate channel, neighborhood chat, buyers’ and renters’ chat
 
     **Frequency:** once every 3 hours
 
-    **Example query:**\
-    “Notify me about new apartment sale listings in Tbilisi, especially Vake, Vera, and Saburtalo. Extract the price, district, area, and condition.”
+    **Example request:**\
+    “Notify me about new apartment sale listings in Tbilisi, especially Vake, Vera, and Saburtalo. Extract price, district, area, and condition.”
 
     **What you will receive:**\
-    A structured selection of new listings matching the criteria: district, price, area, condition, and contacts.
+    A structured selection of new listings that match the conditions: district, price, area, condition, contacts.
   </Card>
 </CardGroup>
 
@@ -175,11 +175,11 @@ Each scenario below shows:
 
     **Frequency:** once every 1 hour or 3 hours
 
-    **Example query:**\
-    “Notify me about product manager, AI product manager, product owner, or founder associate roles with remote work or relocation.”
+    **Example request:**\
+    “Notify me about product manager, AI product manager, product owner, or founder associate jobs with remote work or relocation.”
 
     **What you will receive:**\
-    Relevant job openings with role, company, work format, requirements, salary, and contacts if included.
+    Relevant job postings with role, company, work format, requirements, salary, and contacts if provided.
   </Card>
 
   <Card title="10. Python backend jobs" icon="code">
@@ -191,11 +191,11 @@ Each scenario below shows:
 
     **Frequency:** once every 1 hour
 
-    **Example query:**\
-    “Notify me about Python backend, FastAPI, Django, PostgreSQL, and async Python jobs. I am interested in remote work, Europe, or relocation.”
+    **Example request:**\
+    “Notify me about Python backend, FastAPI, Django, PostgreSQL, async Python jobs. I am interested in remote work, Europe, or relocation.”
 
     **What you will receive:**\
-    Matching job openings with a short description of the stack, conditions, salary, and contacts if provided.
+    Matching job postings with a short description of the stack, terms, salary, and contacts if included.
   </Card>
 
   <Card title="11. Projects, freelance work, and collaborations" icon="handshake">
@@ -207,8 +207,8 @@ Each scenario below shows:
 
     **Frequency:** once every 3 hours
 
-    **Example query:**\
-    “Notify me when there are offers for projects, freelance work, or collaboration. I am especially interested in Python, AI, product analytics, or SaaS launch tasks.”
+    **Example request:**\
+    “Notify me when offers for projects, freelance work, or collaboration appear. I am especially interested in Python, AI, product analytics, or SaaS launch tasks.”
 
     **What you will receive:**\
     Messages with opportunities: project, role, terms, timeline, contact, and short context.
@@ -227,7 +227,7 @@ Each scenario below shows:
 
     **Frequency:** once every 30 minutes or 1 hour
 
-    **Example query:**\
+    **Example request:**\
     “Notify me if someone mentions our product, Telegram chat analysis, AI summaries for Telegram, or similar services.”
 
     **What you will receive:**\
@@ -239,11 +239,11 @@ Each scenario below shows:
 
     **Subscription type:** Events
 
-    **Where to use it:** support chat, user community, closed testers’ chat
+    **Where to use it:** support chat, user community, closed tester chat
 
     **Frequency:** once every 30 minutes
 
-    **Example query:**\
+    **Example request:**\
     “Notify me if users write that they cannot sign in, do not receive a code, analysis does not start, a subscription does not work, or an error appears.”
 
     **What you will receive:**\
@@ -259,31 +259,31 @@ Each scenario below shows:
 
     **Subscription type:** Events
 
-    **Where to use it:** parenting chat, city parenting chat, local community
+    **Where to use it:** parenting chat, city parents’ chat, local community
 
     **Frequency:** once every 6 hours
 
-    **Example query:**\
-    “Notify me if someone recommends a pediatrician, children’s clinic, ENT doctor, or a good doctor for a child. Include the context in which they were recommended.”
+    **Example request:**\
+    “Notify me if someone recommends a pediatrician, children’s clinic, ENT doctor, or a good doctor for a child. Mention the context in which the recommendation was given.”
 
     **What you will receive:**\
-    Messages with doctor or clinic recommendations, recommendation context, and recurring mentions if available.
+    Messages with recommendations for doctors or clinics, recommendation context, and recurring mentions if any.
   </Card>
 
   <Card title="15. Water, electricity, or internet outages" icon="triangle-alert">
-    **Subscription name:** `District outages`
+    **Subscription name:** `Neighborhood outages`
 
     **Subscription type:** Events
 
-    **Where to use it:** district chat, building chat, city chat
+    **Where to use it:** neighborhood chat, building chat, city chat
 
     **Frequency:** once every 30 minutes
 
-    **Example query:**\
-    “Notify me if there are messages about water, electricity, heating, internet outages, or accidents in the district.”
+    **Example request:**\
+    “Notify me if messages appear about water, electricity, heating, internet outages, or emergencies in the neighborhood.”
 
     **What you will receive:**\
-    Important messages with the type of problem, area, time, expected restoration time, and context.
+    Important messages with the type of problem, district, time, expected restoration period, and context.
   </Card>
 
   <Card title="16. Simple dinner recipes" icon="utensils">
@@ -291,11 +291,11 @@ Each scenario below shows:
 
     **Subscription type:** Events
 
-    **Where to use it:** cooking chat, family chat, everyday advice chat
+    **Where to use it:** cooking chat, family chat, everyday tips chat
 
     **Frequency:** once every 12 hours
 
-    **Example query:**\
+    **Example request:**\
     “Notify me if participants share simple dinner recipes with chicken, fish, vegetables, pasta, or grains.”
 
     **What you will receive:**\
@@ -303,10 +303,10 @@ Each scenario below shows:
   </Card>
 </CardGroup>
 
-## Education and useful resources
+## Education and useful materials
 
 <CardGroup cols={1}>
-  <Card title="17. Useful Python learning materials" icon="graduation-cap">
+  <Card title="17. Useful Python materials" icon="graduation-cap">
     **Subscription name:** `Python resources`
 
     **Subscription type:** Events
@@ -315,23 +315,23 @@ Each scenario below shows:
 
     **Frequency:** once every 6 hours
 
-    **Example query:**\
-    “Notify me when useful Python materials appear: courses, books, videos, practice projects, roadmaps, or free bootcamps.”
+    **Example request:**\
+    “Notify me if useful Python materials appear: courses, books, videos, practice projects, roadmaps, or free bootcamps.”
 
     **What you will receive:**\
-    New useful materials with resource type, topic, and short description.
+    New useful materials with resource type, topic, and a short description.
   </Card>
 </CardGroup>
 
-## How to write good conditions for Event subscriptions
+## How to write good conditions for event subscriptions
 
-A good Event subscription usually includes:
+A good event subscription usually contains:
 
 1. **What to look for** — product, job, problem, topic, event, or mention
 2. **Where to look** — a specific chat, channel, or group
 3. **Which parameters matter** — price, district, model, work format, age, country, date
 4. **What to ignore** — irrelevant options, if important
-5. **How often to check** — the more urgent the task, the more frequent the check can be, if your plan allows it
+5. **How often to check** — the more urgent the task, the more frequently you can set the check, if your plan allows it
 
 <AccordionGroup>
   <Accordion title="Too broad request">
@@ -341,12 +341,12 @@ A good Event subscription usually includes:
   </Accordion>
 
   <Accordion title="More effective request">
-    “Notify me when there are apartment rental listings in Vake or Vera. I am interested in 1–2 bedrooms, decent renovation, preferably with parking.”
+    “Notify me when apartment rental listings appear in Vake or Vera. I am interested in 1–2 bedrooms, decent renovation, preferably with parking.”
 
     This request specifies the district, object type, and important parameters, so CoTel can select messages more accurately.
   </Accordion>
 </AccordionGroup>
 
 <Note>
-  CoTel is at an early stage of development. The current version of subscriptions is focused on two main types: Events and Digests. Subscription functionality will be expanded based on user feedback and real use cases.
+  CoTel is at an early stage of development. The current version of subscriptions focuses on two main types: events and digests. Subscription functionality will expand based on user feedback and real usage scenarios.
 </Note>
